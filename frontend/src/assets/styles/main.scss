@@ -1,0 +1,46 @@
+// Setup
+@use "setup/variables";
+@use "setup/functions";
+@use "setup/mixins";
+@use "setup/typography";
+
+// Basics
+@use "basics/helpers";
+@use "basics/layout";
+@use "basics/base";
+// @import "basics/links";
+@use "basics/forms";
+
+
+// pages
+@use "RootCmp";
+@use "pages/AboutUs";
+@use "pages/HomePage";
+@use "pages/GigIndex";
+@use "pages/GigDetails";
+@use "pages/ReviewIndex";
+@use "pages/UserDetails";
+// @import "pages/TaskDetails";
+@use "pages/LoginSignup";
+@use "pages/SellerIndex";
+
+// Components
+@use "cmps/GigList";
+@use "cmps/GigPreview";
+@use "cmps/AppHeader";
+@use "cmps/AppFooter";
+@use "cmps/UserMsg";
+@use "cmps/CategoriesHeader";
+@use "cmps/GigFilter";
+@use "cmps/GigFilterCategory";
+@use "cmps/GigFilterSeller";
+@use "cmps/GigFilterBudget";
+@use "cmps/GigFilterDeliveryTime";
+@use "cmps/StatusModal";
+
+
+@use "cmps/ReviewEdit";
+@use "cmps/ReviewList";
+@use "cmps/ReviewPreview";
+@use "cmps/GigPreviewCarrousel";
+@use "cmps/OrdersModal";

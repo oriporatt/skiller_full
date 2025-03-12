@@ -1,0 +1,96 @@
+@use "variables";
+@use "functions";
+
+/* Breakpoint mixins */
+
+@mixin for-mobile-layout {
+    @media (max-width: calc(variables.$mobile-breakpoint + 40px)) {
+        @content;
+    }
+}
+
+@mixin for-narrow-layout {
+    @media (min-width: calc(variables.$mobile-breakpoint + 40px)) and (max-width: calc(variables.$narrow-breakpoint + 40px)) {
+        @content;
+    }
+}
+
+@mixin for-normal-layout {
+    @media (min-width: calc(variables.$narrow-breakpoint + 40px)) and (max-width: calc(variables.$normal-breakpoint + 40px)) {
+        @content;
+    }
+}
+
+@mixin for-wide-layout {
+    @media (min-width: calc(variables.$normal-breakpoint + 40px)) {
+        @content;
+    }
+}
+
+
+
+@mixin main-box-style {
+    min-width: functions.rem(100px);
+    max-width: functions.rem(120px);
+    aspect-ratio: 1 / 1;
+    font-family: "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius:1rem ;
+    box-shadow: 0 0 .880517px rgba(0,0,0,.029),0 0 2.29197px rgba(0,0,0,.03),0 0 5.52px rgba(0,0,0,.054),0 0 11px rgba(0,0,0,.09);  
+
+}
+
+/* Media  Mixins */
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    overflow: hidden;
+    &::before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: calc(($height / $width) * 100%);
+    }
+    > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  
+    > img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  // Mixin for removing hover efects on iphone screen
+  @mixin hover-supported {    
+    @media not all and (pointer: coarse) {
+        &:hover {
+            @content;
+        }
+    }
+  }
+
+
+  @mixin filter-modal{
+    display: flex;
+    border: 1px solid #e4e5e7;
+    border-radius: 15px;
+    // padding: functions.rem(24px);
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    background-color: variables.$white;
+    overflow-y:scroll; 
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 70;
+    @content;
+
+
+  }
+
+

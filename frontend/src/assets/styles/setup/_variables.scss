@@ -1,0 +1,33 @@
+@use "sass:color";
+// Colors
+$clr1: #ce2e6c;
+$clr2: #62646A; // buttons of header
+$clr3: #1DBF73; // buttons green
+$clr4: #95adbe;
+$clr5: #dff0ea;
+$clr6: #fff;
+$clr7: #222;
+
+$gray1: #ddd;
+$gray2: #aaa;
+$gray3: #777;
+$gray4: #333;
+
+$white: rgb(255, 255, 255);
+$offwhite: color.adjust($white, $lightness: -20%);
+
+$black: rgb(64, 65, 69);
+$gray: hsl(225, 4%, 40%);
+$lightGray: #e0dddd;
+$veryLightGray: rgb(240, 240, 240);
+$btnGray: #62646A;
+$spanGray: hsl(228, 4%, 47%);
+$green: rgb(29, 191, 115);
+$darkGray: hsl(228, 4%, 26%);
+
+$btnBG: hsl(0, 0%, 98%);
+$btnTxt: hsl(228, 4%, 47%);
+// Breakpoints
+$mobile-breakpoint: 460px;
+$narrow-breakpoint: 900px;
+$normal-breakpoint: 1200px;

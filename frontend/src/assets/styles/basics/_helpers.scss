@@ -1,0 +1,44 @@
+@use "../setup/functions";
+@use "../setup/mixins";
+
+// Font Sizes
+.fs12 { font-size: functions.rem(12px); }
+.fs14 { font-size: functions.rem(14px); }
+.fs18 { font-size: functions.rem(18px); }
+.fs20 { font-size: functions.rem(20px); }
+.fs24 { font-size: functions.rem(24px); }
+.fs28 { font-size: functions.rem(28px); }
+.fs30 { font-size: functions.rem(30px); }
+
+// flex helpers
+
+.flex {
+
+    display: flex;
+
+    > *.full {
+        flex: 1;
+    }
+    &.column {
+        flex-direction: column;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.align-center {
+        align-items: center;
+    }
+}
+
+
+// Media helpers
+
+.square-ratio {
+    @include mixins.aspect-ratio(1, 1);
+}
+.video-ratio {
+    @include mixins.aspect-ratio(16, 9);
+}
+.portrait-ratio {
+    @include mixins.aspect-ratio(9, 16);
+}

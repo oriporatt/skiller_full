@@ -1,0 +1,56 @@
+@use "../setup/mixins";
+@use "../setup/variables";
+
+
+.main-container {
+    display: grid;
+
+
+    @include mixins.for-mobile-layout {
+        grid-template-columns: 2rem auto 2rem;
+    }
+    
+    @include mixins.for-narrow-layout {
+        grid-template-columns: 2rem auto 2rem;
+    }
+
+
+    
+    @include mixins.for-normal-layout {
+        grid-template-columns: 
+            2rem
+            1fr
+            2rem;
+    }
+    @include mixins.for-wide-layout {
+        grid-template-columns:
+            minmax(2rem, 1fr)
+            minmax(auto, variables.$normal-breakpoint)
+            minmax(2rem, 1fr)
+    }
+
+    > * {
+        grid-column: 2;
+
+        &.full {
+            grid-column: 1 / -1;
+            width: 100vh;
+            width: 100%;
+
+        }
+        
+    }
+
+    .full{
+        grid-column: 1 / -1;
+        width: 100vh;
+        width: 100%;
+
+    }
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}

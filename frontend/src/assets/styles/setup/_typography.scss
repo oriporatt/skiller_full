@@ -1,0 +1,32 @@
+@font-face {
+    // font-family: caveat;
+    // src: url(../../fonts/Caveat/Caveat-Regular.ttf);
+}
+@font-face {
+    // font-family: montserrat;
+    // src: url(../../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Macan';
+    src: url('/fonts/Macan/macan-bold.woff2') format('woff2'); 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Macan';
+    src: url('/fonts/Macan/macan-regular.woff2') format('woff2');
+    font-weight: normal; 
+
+}
+
+@font-face {
+    font-family: 'DomaineDisplay';
+    src: url('/fonts/DomaineDisplay/domaine-display-web-medium-italic.woff2') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'DomaineDisplay';
+    src: url('/fonts/DomaineDisplay/domaine-display-web-regular.woff2') format('truetype'); 
+    font-style: normal;
+}
