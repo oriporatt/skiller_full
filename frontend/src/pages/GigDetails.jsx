@@ -27,7 +27,7 @@ export function GigDetails() {
   const [orderPackage, setOrderPackage] = useState('Basic')
 
   const [order,setOrder]=useState(null)
-
+  console.log(order)
     // update gig state while changing
 
   useEffect(() => {
