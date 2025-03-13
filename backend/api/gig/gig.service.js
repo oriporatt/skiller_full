@@ -5,9 +5,9 @@ import { makeId } from '../../services/util.service.js'
 import { dbService } from '../../services/db.service.js'
 import { asyncLocalStorage } from '../../services/als.service.js'
 
-const PAGE_SIZE = 3
+// const PAGE_SIZE = 3
 
-export const carService = {
+export const gigService = {
 	remove,
 	query,
 	getById,
@@ -23,18 +23,18 @@ async function query(filterBy = { txt: '' }) {
         const criteria = _buildCriteria(filterBy)
         const sort = _buildSort(filterBy)
 
-		const collection = await dbService.getCollection('car')
+		const collection = await dbService.getCollection('gig')
 		
-		var carCursor = await collection.find(criteria, { sort })
+		var gigCursor = await collection.find(criteria, { sort })
 
-		if (filterBy.pageIdx !== undefined) {
-			carCursor.skip(filterBy.pageIdx * PAGE_SIZE).limit(PAGE_SIZE)
-		}
+		// if (filterBy.pageIdx !== undefined) {
+		// 	carCursor.skip(filterBy.pageIdx * PAGE_SIZE).limit(PAGE_SIZE)
+		// }
 
-		const cars = carCursor.toArray()
-		return cars
+		const gigs = gigCursor.toArray()
+		return gigs
 	} catch (err) {
-		logger.error('cannot find cars', err)
+		logger.error('cannot find gigs', err)
 		throw err
 	}
 }
@@ -133,15 +133,81 @@ async function removeCarMsg(carId, msgId) {
 }
 
 function _buildCriteria(filterBy) {
-    const criteria = {
-        vendor: { $regex: filterBy.txt, $options: 'i' },
-        speed: { $gte: filterBy.minSpeed },
+	const criteria = {
+	};
+
+    if (filterBy.txt) {
+        criteria.title = { $regex: filterBy.txt, $options: 'i' };
     }
 
-    return criteria
+
+    if (filterBy.filterPriceGroup){
+		criteria.price = {};
+		if (filterBy.minPrice !== undefined) {
+			criteria.price.$gte = filterBy.minPrice;
+		}
+		if (filterBy.maxPrice !== undefined && filterBy.maxPrice > 0) {
+			criteria.price.$lte = filterBy.maxPrice;
+		}
+    }
+	// check later what type of object coming from front?
+	const tagsFilter=_buildCriteriaArray(filterBy.categoriesArray)
+	if (Object.keys(tagsFilter).length !== 0) {
+		criteria.tags=tagsFilter
+	}
+
+	if (filterBy.sellerRate) {
+		  criteria['owner.rate'] = { $gte: +filterBy.sellerRate };
+	}
+
+
+	if (filterBy.sellerLevels&&filterBy.sellerLevels.length > 0) {
+		const sellerLevelsArray = JSON.parse(filterBy.sellerLevels);
+		criteria['owner.level'] = { $in: sellerLevelsArray };
+	}
+
+	if (filterBy.deliveryMaxTime !== 'anytime') {
+		criteria.daysToMake = { $lte: +filterBy.deliveryMaxTime };
+	}
+
+
+	return criteria
 }
 
 function _buildSort(filterBy) {
     if(!filterBy.sortField) return {}
     return { [filterBy.sortField]: filterBy.sortDir }
 }
+
+function _buildCriteriaArray(categoriesArrayInput) {
+    let tags = {};
+
+    // Parse categoriesArray if it's a string
+    let categoriesArray = categoriesArrayInput;
+    if (typeof categoriesArray === 'string') {
+
+		try {
+            categoriesArray = JSON.parse(categoriesArray);
+        } catch (error) {
+            console.error('Invalid JSON format for categoriesArray:', error);
+            categoriesArray = [];
+        }
+    }
+	if (Array.isArray(categoriesArray) && categoriesArray.length > 0) {
+        // const allActive = categoriesArray.every(category => category.active === true);
+        const allInactive = categoriesArray.every(category => category.active === false);
+
+        if (!allInactive) {
+            const activeCategories = categoriesArray
+                .filter(category => category.active === true)
+                .map(category => category.category);
+
+            if (activeCategories.length > 0) {
+                tags = { $all: activeCategories };
+            }
+        }
+    }
+	return tags
+
+}
+

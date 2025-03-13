@@ -1323,3 +1323,369 @@
 27.2.2025, 20:14:55 - INFO - Server is running on port: 3030
 27.2.2025, 20:14:56 - INFO - New connected socket [id: _hThC_3ztC2lqNliAAAB]
 13.3.2025, 11:27:25 - INFO - Server is running on port: 3030
+13.3.2025, 12:09:21 - INFO - Server is running on port: 3030
+13.3.2025, 12:11:55 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:11:55 - ERROR - Cannot Connect to DB | MongoParseError: URI malformed
+13.3.2025, 12:11:55 - ERROR - Failed to get Mongo collection | MongoParseError: URI malformed
+13.3.2025, 12:11:55 - ERROR - cannot find gigs | MongoParseError: URI malformed
+13.3.2025, 12:11:55 - ERROR - Failed to get gigs | MongoParseError: URI malformed
+13.3.2025, 12:12:50 - INFO - Server is running on port: 3030
+13.3.2025, 12:12:56 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:14:04 - INFO - Server is running on port: 3030
+13.3.2025, 12:14:07 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:14:07 - INFO - yes
+13.3.2025, 12:14:44 - INFO - Server is running on port: 3030
+13.3.2025, 12:14:51 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:14:51 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":0,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:17:17 - INFO - Server is running on port: 3030
+13.3.2025, 12:17:19 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:17:19 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":0,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:17:49 - INFO - Server is running on port: 3030
+13.3.2025, 12:17:51 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:17:51 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":0,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:17:52 - ERROR - cannot find gigs | ReferenceError: sort is not defined
+13.3.2025, 12:17:52 - ERROR - Failed to get gigs | ReferenceError: sort is not defined
+13.3.2025, 12:19:15 - INFO - Server is running on port: 3030
+13.3.2025, 12:19:17 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:19:17 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":0,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:22:52 - INFO - Server is running on port: 3030
+13.3.2025, 12:22:56 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:22:56 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":0,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:28:44 - INFO - Server is running on port: 3030
+13.3.2025, 12:32:17 - INFO - Server is running on port: 3030
+13.3.2025, 12:32:22 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:32:22 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:32:22 - ERROR - Failed to get gigs | ReferenceError: criteria is not defined
+13.3.2025, 12:32:22 - ERROR - cannot find gigs | ReferenceError: criteria is not defined
+13.3.2025, 12:32:39 - INFO - Server is running on port: 3030
+13.3.2025, 12:32:41 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:32:41 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:33:10 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:33:10 - INFO - {"txt":"i will","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:34:18 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:34:18 - INFO - {"txt":"logo","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:34:30 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:34:30 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:35:39 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:35:39 - INFO - {"txt":"card","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:36:10 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:36:10 - INFO - {"txt":"card","categoriesArray":[],"minPrice":500,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:36:18 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:36:18 - INFO - {"txt":"card","categoriesArray":[],"minPrice":100,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:36:49 - INFO - Server is running on port: 3030
+13.3.2025, 12:36:51 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:36:51 - INFO - {"txt":"card","categoriesArray":[],"minPrice":100,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:37:02 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:37:02 - INFO - {"txt":"card","categoriesArray":[],"minPrice":70,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:37:12 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:37:12 - INFO - {"txt":"card","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:37:27 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:37:27 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:37:36 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:37:36 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:38:32 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:38:32 - INFO - {"txt":"","categoriesArray":[],"minPrice":100,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:38:39 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:38:39 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:38:47 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:38:47 - INFO - {"txt":"card","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:41:27 - INFO - Server is running on port: 3030
+13.3.2025, 12:41:55 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:41:55 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":150,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:41:56 - ERROR - Failed to get gigs | MongoServerError: unknown operator: $ste
+13.3.2025, 12:42:36 - INFO - Server is running on port: 3030
+13.3.2025, 12:42:40 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:42:40 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":150,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:44:00 - INFO - Server is running on port: 3030
+13.3.2025, 12:44:02 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:44:02 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":150,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:44:13 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:44:13 - INFO - {"txt":"","categoriesArray":[],"minPrice":100,"maxPrice":150,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:44:17 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:44:17 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":150,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:44:24 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:44:24 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:44:29 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:44:29 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:50:11 - INFO - Server is running on port: 3030
+13.3.2025, 12:50:16 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:50:16 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:50:29 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":5,"filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:50:29 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:50:39 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:50:39 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":5,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:50:53 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:50:53 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:51:03 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:51:03 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":100,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:51:11 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:51:11 - INFO - {"txt":"","categoriesArray":[],"minPrice":96,"maxPrice":100,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:51:18 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:51:18 - INFO - {"txt":"","categoriesArray":[],"minPrice":96,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:51:26 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:51:26 - INFO - {"txt":"","categoriesArray":[],"minPrice":120,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:51:35 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:51:35 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":100,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:52:16 - INFO - Server is running on port: 3030
+13.3.2025, 12:52:21 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:52:21 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:52:33 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:52:33 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":100,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:52:47 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:52:47 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":100,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:52:54 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:52:54 - INFO - {"txt":"","categoriesArray":[],"minPrice":96,"maxPrice":100,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:52:58 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:52:58 - INFO - {"txt":"","categoriesArray":[],"minPrice":96,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:53:13 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:53:13 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:53:27 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:53:27 - INFO - {"txt":"","categoriesArray":[],"minPrice":95,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:55:33 - INFO - Server is running on port: 3030
+13.3.2025, 12:55:36 - INFO - {"txt":"","categoriesArray":[],"minPrice":95,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:55:36 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:55:47 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:55:47 - INFO - {"txt":"","categoriesArray":[],"minPrice":95,"maxPrice":100,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:55:53 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":100,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:55:53 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:55:58 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:55:58 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":110,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:56:04 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:56:04 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 12:56:14 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 12:56:14 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:02:15 - INFO - Server is running on port: 3030
+13.3.2025, 13:03:20 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:03:20 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:03:52 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:03:52 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:05:01 - INFO - Server is running on port: 3030
+13.3.2025, 13:05:05 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:05:05 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:07:19 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:07:19 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:07:46 - INFO - Server is running on port: 3030
+13.3.2025, 13:07:48 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:07:48 - INFO - {"txt":"","categoriesArray":"[\n    {\n        \"category\": \"Graphics & Design\",\n        \"active\": false\n    },\n    {\n        \"category\": \"Programming & Tech\",\n        \"active\": false\n    },\n    {\n        \"category\": \"Digital Marketing\",\n        \"active\": false\n    },\n    {\n        \"category\": \"Video & Animation\",\n        \"active\": false\n    },\n    {\n        \"category\": \"Writing & Translation\",\n        \"active\": false\n    },\n    {\n        \"category\": \"Music & Audio\",\n        \"active\": false\n    },\n    {\n        \"category\": \"Business\",\n        \"active\": false\n    },\n    {\n        \"category\": \"Finance\",\n        \"active\": false\n    },\n    {\n        \"category\": \"AI Services\",\n        \"active\": false\n    },\n    {\n        \"category\": \"Personal Growth\",\n        \"active\": false\n    },\n    {\n        \"category\": \"Consulting\",\n        \"active\": false\n    },\n    {\n        \"category\": \"Photography\",\n        \"active\": false\n    }\n]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:07:48 - ERROR - Failed to get gigs | TypeError: filterBy.categoriesArray.every is not a function
+13.3.2025, 13:07:48 - ERROR - cannot find gigs | TypeError: filterBy.categoriesArray.every is not a function
+13.3.2025, 13:10:45 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:10:45 - INFO - {"txt":"","categoriesArray":"[{\"category\":\"Graphics & Design\",\"active\":false},{\"category\":\"Programming & Tech\",\"active\":false},{\"category\":\"Digital Marketing\",\"active\":false},{\"category\":\"Video & Animation\",\"active\":false},{\"category\":\"Writing & Translation\",\"active\":false},{\"category\":\"Music & Audio\",\"active\":false},{\"category\":\"Business\",\"active\":false},{\"category\":\"Finance\",\"active\":false},{\"category\":\"AI Services\",\"active\":false},{\"category\":\"Personal Growth\",\"active\":false},{\"category\":\"Consulting\",\"active\":false},{\"category\":\"Photography\",\"active\":false}]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:10:45 - ERROR - cannot find gigs | TypeError: filterBy.categoriesArray.every is not a function
+13.3.2025, 13:10:45 - ERROR - Failed to get gigs | TypeError: filterBy.categoriesArray.every is not a function
+13.3.2025, 13:11:28 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:11:28 - INFO - {"txt":"","categoriesArray":"[{\"category\":\"Graphics & Design\",\"active\":false},{\"category\":\"Programming & Tech\",\"active\":false},{\"category\":\"Digital Marketing\",\"active\":false},{\"category\":\"Video & Animation\",\"active\":false},{\"category\":\"Writing & Translation\",\"active\":false},{\"category\":\"Music & Audio\",\"active\":false},{\"category\":\"Business\",\"active\":false},{\"category\":\"Finance\",\"active\":false},{\"category\":\"AI Services\",\"active\":false},{\"category\":\"Personal Growth\",\"active\":false},{\"category\":\"Consulting\",\"active\":false},{\"category\":\"Photography\",\"active\":false}]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:11:28 - ERROR - cannot find gigs | TypeError: filterBy.categoriesArray.every is not a function
+13.3.2025, 13:11:28 - ERROR - Failed to get gigs | TypeError: filterBy.categoriesArray.every is not a function
+13.3.2025, 13:19:44 - INFO - Server is running on port: 3030
+13.3.2025, 13:19:49 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:19:49 - INFO - []
+13.3.2025, 13:19:49 - INFO - {"txt":"","categoriesArray":"[{\"category\":\"Graphics & Design\",\"active\":false},{\"category\":\"Programming & Tech\",\"active\":false},{\"category\":\"Digital Marketing\",\"active\":false},{\"category\":\"Video & Animation\",\"active\":false},{\"category\":\"Writing & Translation\",\"active\":false},{\"category\":\"Music & Audio\",\"active\":false},{\"category\":\"Business\",\"active\":false},{\"category\":\"Finance\",\"active\":false},{\"category\":\"AI Services\",\"active\":false},{\"category\":\"Personal Growth\",\"active\":false},{\"category\":\"Consulting\",\"active\":false},{\"category\":\"Photography\",\"active\":false}]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:21:28 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:21:28 - INFO - {"$all":["Photography"]}
+13.3.2025, 13:21:28 - INFO - {"txt":"","categoriesArray":"[{\"category\":\"Graphics & Design\",\"active\":false},{\"category\":\"Programming & Tech\",\"active\":false},{\"category\":\"Digital Marketing\",\"active\":false},{\"category\":\"Video & Animation\",\"active\":false},{\"category\":\"Writing & Translation\",\"active\":false},{\"category\":\"Music & Audio\",\"active\":false},{\"category\":\"Business\",\"active\":false},{\"category\":\"Finance\",\"active\":false},{\"category\":\"AI Services\",\"active\":false},{\"category\":\"Personal Growth\",\"active\":false},{\"category\":\"Consulting\",\"active\":false},{\"category\":\"Photography\",\"active\":true}]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:23:40 - INFO - Server is running on port: 3030
+13.3.2025, 13:23:45 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:23:45 - INFO - {"txt":"","categoriesArray":"[{\"category\":\"Graphics & Design\",\"active\":false},{\"category\":\"Programming & Tech\",\"active\":false},{\"category\":\"Digital Marketing\",\"active\":false},{\"category\":\"Video & Animation\",\"active\":false},{\"category\":\"Writing & Translation\",\"active\":false},{\"category\":\"Music & Audio\",\"active\":false},{\"category\":\"Business\",\"active\":false},{\"category\":\"Finance\",\"active\":false},{\"category\":\"AI Services\",\"active\":false},{\"category\":\"Personal Growth\",\"active\":false},{\"category\":\"Consulting\",\"active\":false},{\"category\":\"Photography\",\"active\":true}]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:23:45 - ERROR - Failed to get gigs | ReferenceError: tags is not defined
+13.3.2025, 13:23:45 - ERROR - cannot find gigs | ReferenceError: tags is not defined
+13.3.2025, 13:23:55 - INFO - Server is running on port: 3030
+13.3.2025, 13:23:57 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:23:57 - INFO - {"txt":"","categoriesArray":"[{\"category\":\"Graphics & Design\",\"active\":false},{\"category\":\"Programming & Tech\",\"active\":false},{\"category\":\"Digital Marketing\",\"active\":false},{\"category\":\"Video & Animation\",\"active\":false},{\"category\":\"Writing & Translation\",\"active\":false},{\"category\":\"Music & Audio\",\"active\":false},{\"category\":\"Business\",\"active\":false},{\"category\":\"Finance\",\"active\":false},{\"category\":\"AI Services\",\"active\":false},{\"category\":\"Personal Growth\",\"active\":false},{\"category\":\"Consulting\",\"active\":false},{\"category\":\"Photography\",\"active\":true}]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:23:57 - INFO - {"$all":["Photography"]}
+13.3.2025, 13:24:08 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:24:08 - INFO - []
+13.3.2025, 13:24:08 - INFO - {"txt":"","categoriesArray":"[{\"category\":\"Graphics & Design\",\"active\":false},{\"category\":\"Programming & Tech\",\"active\":false},{\"category\":\"Digital Marketing\",\"active\":false},{\"category\":\"Video & Animation\",\"active\":false},{\"category\":\"Writing & Translation\",\"active\":false},{\"category\":\"Music & Audio\",\"active\":false},{\"category\":\"Business\",\"active\":false},{\"category\":\"Finance\",\"active\":false},{\"category\":\"AI Services\",\"active\":false},{\"category\":\"Personal Growth\",\"active\":false},{\"category\":\"Consulting\",\"active\":false},{\"category\":\"Photography\",\"active\":false}]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:25:27 - INFO - Server is running on port: 3030
+13.3.2025, 13:25:33 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:25:33 - INFO - {"txt":"","categoriesArray":"[{\"category\":\"Graphics & Design\",\"active\":false},{\"category\":\"Programming & Tech\",\"active\":false},{\"category\":\"Digital Marketing\",\"active\":false},{\"category\":\"Video & Animation\",\"active\":false},{\"category\":\"Writing & Translation\",\"active\":false},{\"category\":\"Music & Audio\",\"active\":false},{\"category\":\"Business\",\"active\":false},{\"category\":\"Finance\",\"active\":false},{\"category\":\"AI Services\",\"active\":false},{\"category\":\"Personal Growth\",\"active\":false},{\"category\":\"Consulting\",\"active\":false},{\"category\":\"Photography\",\"active\":false}]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:25:44 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:25:44 - INFO - {"txt":"","categoriesArray":"[{\"category\":\"Graphics & Design\",\"active\":false},{\"category\":\"Programming & Tech\",\"active\":false},{\"category\":\"Digital Marketing\",\"active\":false},{\"category\":\"Video & Animation\",\"active\":false},{\"category\":\"Writing & Translation\",\"active\":false},{\"category\":\"Music & Audio\",\"active\":false},{\"category\":\"Business\",\"active\":false},{\"category\":\"Finance\",\"active\":false},{\"category\":\"AI Services\",\"active\":false},{\"category\":\"Personal Growth\",\"active\":false},{\"category\":\"Consulting\",\"active\":false},{\"category\":\"Photography\",\"active\":true}]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:26:22 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:26:22 - INFO - {"txt":"","categoriesArray":"[{\"category\":\"Graphics & Design\",\"active\":true},{\"category\":\"Programming & Tech\",\"active\":false},{\"category\":\"Digital Marketing\",\"active\":false},{\"category\":\"Video & Animation\",\"active\":false},{\"category\":\"Writing & Translation\",\"active\":false},{\"category\":\"Music & Audio\",\"active\":false},{\"category\":\"Business\",\"active\":false},{\"category\":\"Finance\",\"active\":false},{\"category\":\"AI Services\",\"active\":false},{\"category\":\"Personal Growth\",\"active\":false},{\"category\":\"Consulting\",\"active\":false},{\"category\":\"Photography\",\"active\":true}]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:26:31 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:26:31 - INFO - {"txt":"","categoriesArray":"[{\"category\":\"Graphics & Design\",\"active\":false},{\"category\":\"Programming & Tech\",\"active\":false},{\"category\":\"Digital Marketing\",\"active\":false},{\"category\":\"Video & Animation\",\"active\":false},{\"category\":\"Writing & Translation\",\"active\":false},{\"category\":\"Music & Audio\",\"active\":false},{\"category\":\"Business\",\"active\":false},{\"category\":\"Finance\",\"active\":false},{\"category\":\"AI Services\",\"active\":false},{\"category\":\"Personal Growth\",\"active\":false},{\"category\":\"Consulting\",\"active\":false},{\"category\":\"Photography\",\"active\":true}]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:27:20 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:27:20 - INFO - {"txt":"","categoriesArray":"[{\"category\":\"Graphics & Design\",\"active\":false},{\"category\":\"Programming & Tech\",\"active\":false},{\"category\":\"Digital Marketing\",\"active\":false},{\"category\":\"Video & Animation\",\"active\":false},{\"category\":\"Writing & Translation\",\"active\":false},{\"category\":\"Music & Audio\",\"active\":false},{\"category\":\"Business\",\"active\":false},{\"category\":\"Finance\",\"active\":false},{\"category\":\"AI Services\",\"active\":false},{\"category\":\"Personal Growth\",\"active\":true},{\"category\":\"Consulting\",\"active\":false},{\"category\":\"Photography\",\"active\":true}]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:28:01 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:28:01 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": false } ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:28:08 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:28:08 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": true} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:28:45 - INFO - Server is running on port: 3030
+13.3.2025, 13:28:48 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:28:48 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": true} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:28:48 - INFO - string
+13.3.2025, 13:29:22 - INFO - Server is running on port: 3030
+13.3.2025, 13:29:43 - INFO - Server is running on port: 3030
+13.3.2025, 13:30:21 - INFO - Server is running on port: 3030
+13.3.2025, 13:33:47 - INFO - Server is running on port: 3030
+13.3.2025, 13:33:51 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:33:51 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": true} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:33:51 - INFO - string
+13.3.2025, 13:34:04 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:34:04 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": false} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:34:04 - INFO - string
+13.3.2025, 13:35:20 - INFO - Server is running on port: 3030
+13.3.2025, 13:40:41 - INFO - Server is running on port: 3030
+13.3.2025, 13:40:45 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:40:45 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": false} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:40:45 - ERROR - cannot find gigs | ReferenceError: deliveryMaxTime is not defined
+13.3.2025, 13:40:45 - ERROR - Failed to get gigs | ReferenceError: deliveryMaxTime is not defined
+13.3.2025, 13:41:03 - INFO - Server is running on port: 3030
+13.3.2025, 13:41:05 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:41:05 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": false} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:41:40 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": false} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"5","sellerLevels":"5","sortField":"","sortDir":1}
+13.3.2025, 13:41:40 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:41:40 - ERROR - cannot find gigs | ReferenceError: sellerLevels is not defined
+13.3.2025, 13:41:40 - ERROR - Failed to get gigs | ReferenceError: sellerLevels is not defined
+13.3.2025, 13:42:18 - INFO - Server is running on port: 3030
+13.3.2025, 13:42:23 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:42:23 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": false} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":5,"sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:42:23 - ERROR - cannot find gigs | ReferenceError: sellerRate is not defined
+13.3.2025, 13:42:23 - ERROR - Failed to get gigs | ReferenceError: sellerRate is not defined
+13.3.2025, 13:43:14 - INFO - Server is running on port: 3030
+13.3.2025, 13:43:49 - INFO - Server is running on port: 3030
+13.3.2025, 13:43:54 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:43:54 - ERROR - cannot find gigs | TypeError: Cannot set properties of undefined (setting 'rate')
+13.3.2025, 13:43:54 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": false} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":5,"sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:43:54 - ERROR - Failed to get gigs | TypeError: Cannot set properties of undefined (setting 'rate')
+13.3.2025, 13:46:39 - INFO - Server is running on port: 3030
+13.3.2025, 13:46:43 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:46:43 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": false} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":5,"sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:46:49 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:46:49 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": false} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":4,"sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:46:59 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:46:59 - INFO - {"txt":"","categoriesArray":[],"minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":4,"sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:47:04 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:47:04 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": false} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:47:47 - INFO - Server is running on port: 3030
+13.3.2025, 13:48:01 - INFO - Server is running on port: 3030
+13.3.2025, 13:48:19 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:48:19 - INFO - {"txt":"","categoriesArray":"[ { \"category\": \"Graphics & Design\", \"active\": false }, { \"category\": \"Programming & Tech\", \"active\": false }, { \"category\": \"Digital Marketing\", \"active\": false }, { \"category\": \"Video & Animation\", \"active\": false }, { \"category\": \"Writing & Translation\", \"active\": false }, { \"category\": \"Music & Audio\", \"active\": false }, { \"category\": \"Business\", \"active\": false }, { \"category\": \"Finance\", \"active\": false }, { \"category\": \"AI Services\", \"active\": false }, { \"category\": \"Personal Growth\", \"active\": false }, { \"category\": \"Consulting\", \"active\": false }, { \"category\": \"Photography\", \"active\": false} ]","minPrice":0,"maxPrice":-1,"filterPriceGroup":"bla","deliveryMaxTime":"anytime","sellerRate":4,"sellerLevels":[],"sortField":"","sortDir":1}
+13.3.2025, 13:48:30 - INFO - Server is running on port: 3030
+13.3.2025, 13:48:34 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:50:33 - INFO - Server is running on port: 3030
+13.3.2025, 13:50:51 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:51:21 - INFO - Server is running on port: 3030
+13.3.2025, 13:51:25 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:53:29 - INFO - Server is running on port: 3030
+13.3.2025, 13:53:36 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:53:56 - INFO - Server is running on port: 3030
+13.3.2025, 13:54:40 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:54:54 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:55:17 - INFO - Server is running on port: 3030
+13.3.2025, 13:55:19 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:55:39 - INFO - Server is running on port: 3030
+13.3.2025, 13:55:42 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:55:42 - INFO - 1
+13.3.2025, 13:56:12 - INFO - Server is running on port: 3030
+13.3.2025, 13:56:27 - INFO - number
+13.3.2025, 13:56:27 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:58:24 - INFO - Server is running on port: 3030
+13.3.2025, 13:58:26 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:58:26 - ERROR - cannot find gigs | TypeError: Cannot set properties of undefined (setting '$gte')
+13.3.2025, 13:58:26 - ERROR - Failed to get gigs | TypeError: Cannot set properties of undefined (setting '$gte')
+13.3.2025, 13:59:43 - INFO - Server is running on port: 3030
+13.3.2025, 13:59:46 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 13:59:46 - ERROR - cannot find gigs | ReferenceError: sellerRate is not defined
+13.3.2025, 13:59:46 - ERROR - Failed to get gigs | ReferenceError: sellerRate is not defined
+13.3.2025, 14:02:04 - INFO - Server is running on port: 3030
+13.3.2025, 14:02:19 - INFO - Server is running on port: 3030
+13.3.2025, 14:02:24 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:04:16 - INFO - Server is running on port: 3030
+13.3.2025, 14:04:19 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:05:37 - INFO - Server is running on port: 3030
+13.3.2025, 14:05:41 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:07:01 - INFO - Server is running on port: 3030
+13.3.2025, 14:07:05 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:07:05 - ERROR - cannot find gigs | TypeError: Cannot set properties of undefined (setting 'rate')
+13.3.2025, 14:07:05 - ERROR - Failed to get gigs | TypeError: Cannot set properties of undefined (setting 'rate')
+13.3.2025, 14:07:47 - INFO - Server is running on port: 3030
+13.3.2025, 14:07:54 - INFO - Server is running on port: 3030
+13.3.2025, 14:07:57 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:08:09 - INFO - Server is running on port: 3030
+13.3.2025, 14:08:13 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:09:34 - INFO - Server is running on port: 3030
+13.3.2025, 14:09:37 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:10:03 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:10:19 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:13:39 - INFO - Server is running on port: 3030
+13.3.2025, 14:13:43 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:14:21 - INFO - Server is running on port: 3030
+13.3.2025, 14:14:24 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:15:46 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:16:15 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:16:42 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:17:25 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:17:37 - INFO - Server is running on port: 3030
+13.3.2025, 14:17:39 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:17:49 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:17:54 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:20:57 - INFO - Server is running on port: 3030
+13.3.2025, 14:21:02 - INFO - Server is running on port: 3030
+13.3.2025, 14:21:04 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:21:13 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:21:18 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:22:14 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:23:08 - INFO - Server is running on port: 3030
+13.3.2025, 14:23:09 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:23:11 - ERROR - Failed to get gigs | MongoServerError: $in needs an array
+13.3.2025, 14:26:29 - INFO - Server is running on port: 3030
+13.3.2025, 14:26:31 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:26:33 - ERROR - Failed to get gigs | MongoServerError: $in needs an array
+13.3.2025, 14:26:52 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:26:53 - ERROR - Failed to get gigs | MongoServerError: $in needs an array
+13.3.2025, 14:27:39 - INFO - Server is running on port: 3030
+13.3.2025, 14:27:41 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:27:43 - ERROR - Failed to get gigs | MongoServerError: $in needs an array
+13.3.2025, 14:28:11 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:28:11 - ERROR - Failed to get gigs | MongoServerError: $in needs an array
+13.3.2025, 14:28:18 - INFO - Server is running on port: 3030
+13.3.2025, 14:28:18 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:28:20 - ERROR - Failed to get gigs | MongoServerError: $in needs an array
+13.3.2025, 14:28:37 - INFO - Server is running on port: 3030
+13.3.2025, 14:29:21 - INFO - Server is running on port: 3030
+13.3.2025, 14:29:22 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:29:38 - INFO - Server is running on port: 3030
+13.3.2025, 14:29:39 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:30:36 - INFO - Server is running on port: 3030
+13.3.2025, 14:30:37 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:30:54 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:31:00 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:31:08 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:31:14 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:31:26 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:31:29 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:32:03 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:32:13 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:32:26 - INFO - Server is running on port: 3030
+13.3.2025, 14:32:27 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:32:33 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:32:39 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:32:50 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:33:25 - INFO - Server is running on port: 3030
+13.3.2025, 14:33:47 - INFO - Server is running on port: 3030
+13.3.2025, 14:33:48 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:33:59 - INFO - Server is running on port: 3030
+13.3.2025, 14:34:01 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:34:11 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:34:23 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:34:31 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:34:56 - INFO - Server is running on port: 3030
+13.3.2025, 14:35:03 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:35:20 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:35:27 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:35:36 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:35:39 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:35:46 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:36:24 - INFO - Server is running on port: 3030
+13.3.2025, 14:36:35 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:36:49 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:36:54 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:37:05 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:37:16 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:37:22 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:37:27 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:37:34 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:37:41 - INFO - /api/gig | GET | {} | {}
+13.3.2025, 14:39:18 - INFO - /api/gig | GET | {} | {}

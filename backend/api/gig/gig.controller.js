@@ -1,20 +1,26 @@
 import { logger } from '../../services/logger.service.js'
-import { carService } from './gig.service.js'
+import { gigService } from './gig.service.js'
 
 export async function getGigs(req, res) {
+
 	try {
 		const filterBy = {
 			txt: req.query.txt || '',
-			minSpeed: +req.query.minSpeed || 0,
-            sortField: req.query.sortField || '',
-            sortDir: req.query.sortDir || 1,
-			pageIdx: req.query.pageIdx,
+			categoriesArray: req.query.categoriesArray || [],
+			minPrice:+req.query.minPrice || 0,
+			maxPrice: +req.query.maxPrice || -1,
+			filterPriceGroup: req.query.filterPriceGroup || '',
+			deliveryMaxTime:req.query.deliveryMaxTime || 'anytime',
+			sellerRate:req.query.sellerRate || 0,
+			sellerLevels:req.query.sellerLevels || [],
+			sortField: req.query.sortField || '',
+			sortDir: req.query.sortDir || 1,
 		}
-		const cars = await carService.query(filterBy)
-		res.json(cars)
+		const gigs = await gigService.query(filterBy)
+		res.json(gigs)
 	} catch (err) {
-		logger.error('Failed to get cars', err)
-		res.status(400).send({ err: 'Failed to get cars' })
+		logger.error('Failed to get gigs', err)
+		res.status(400).send({ err: 'Failed to get gigs' })
 	}
 }
 
