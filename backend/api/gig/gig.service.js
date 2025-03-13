@@ -162,8 +162,7 @@ function _buildCriteria(filterBy) {
 
 
 	if (filterBy.sellerLevels&&filterBy.sellerLevels.length > 0) {
-		const sellerLevelsArray = JSON.parse(filterBy.sellerLevels);
-		criteria['owner.level'] = { $in: sellerLevelsArray };
+		criteria['owner.level'] = { $in: filterBy.sellerLevels };
 	}
 
 	if (filterBy.deliveryMaxTime !== 'anytime') {
@@ -182,17 +181,16 @@ function _buildSort(filterBy) {
 function _buildCriteriaArray(categoriesArrayInput) {
     let tags = {};
 
-    // Parse categoriesArray if it's a string
     let categoriesArray = categoriesArrayInput;
-    if (typeof categoriesArray === 'string') {
+    // if (typeof categoriesArray === 'string') {
 
-		try {
-            categoriesArray = JSON.parse(categoriesArray);
-        } catch (error) {
-            console.error('Invalid JSON format for categoriesArray:', error);
-            categoriesArray = [];
-        }
-    }
+	// 	try {
+    //         categoriesArray = JSON.parse(categoriesArray);
+    //     } catch (error) {
+    //         console.error('Invalid JSON format for categoriesArray:', error);
+    //         categoriesArray = [];
+    //     }
+    // }
 	if (Array.isArray(categoriesArray) && categoriesArray.length > 0) {
         // const allActive = categoriesArray.every(category => category.active === true);
         const allInactive = categoriesArray.every(category => category.active === false);

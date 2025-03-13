@@ -66,7 +66,6 @@ function getDefaultFilter() {
         sortDir: '',
     }
 }
-console.log(getDefaultFilter())
 
 const service = VITE_LOCAL === 'true' ? local : local //remote
 export const gigService = { getEmptyCar, getDefaultFilter,

@@ -4,18 +4,20 @@ import { gigService } from './gig.service.js'
 export async function getGigs(req, res) {
 
 	try {
+
 		const filterBy = {
-			txt: req.query.txt || '',
-			categoriesArray: req.query.categoriesArray || [],
-			minPrice:+req.query.minPrice || 0,
-			maxPrice: +req.query.maxPrice || -1,
-			filterPriceGroup: req.query.filterPriceGroup || '',
-			deliveryMaxTime:req.query.deliveryMaxTime || 'anytime',
-			sellerRate:req.query.sellerRate || 0,
-			sellerLevels:req.query.sellerLevels || [],
-			sortField: req.query.sortField || '',
-			sortDir: req.query.sortDir || 1,
+			txt: req.body.txt || '',
+			categoriesArray: req.body.categoriesArray || [],
+			minPrice:+req.body.minPrice || 0,
+			maxPrice: +req.body.maxPrice || -1,
+			filterPriceGroup: req.body.filterPriceGroup || '',
+			deliveryMaxTime: req.body.deliveryMaxTime || 'anytime',
+			sellerRate:req.body.sellerRate || 0,
+			sellerLevels:req.body.sellerLevels || [],
+			sortField: req.body.sortField || '',
+			sortDir: req.body.sortDir || 1,
 		}
+
 		const gigs = await gigService.query(filterBy)
 		res.json(gigs)
 	} catch (err) {

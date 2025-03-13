@@ -72,6 +72,7 @@ export function GigIndex() {
             showErrorMsg('Cannot update car')
         }        
     }
+    console.log(filterBy)
 
     return (
         <main className="gig-index full">
