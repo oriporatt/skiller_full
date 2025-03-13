@@ -3,7 +3,7 @@ import express from 'express'
 import { requireAuth } from '../../middlewares/requireAuth.middleware.js'
 import { log } from '../../middlewares/logger.middleware.js'
 
-import { getGigs } from './gig.controller.js'
+import { getGigs, getGigById } from './gig.controller.js'
 
 const router = express.Router()
 
@@ -11,7 +11,7 @@ const router = express.Router()
 // router.use(requireAuth)
 
 router.get('/', log, getGigs)
-// router.get('/:id', log, getCarById)
+router.get('/:id', log, getGigById)
 // router.post('/', log, requireAuth, addCar)
 // router.put('/:id', requireAuth, updateCar)
 // router.delete('/:id', requireAuth, removeCar)

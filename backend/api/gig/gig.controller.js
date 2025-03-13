@@ -26,14 +26,14 @@ export async function getGigs(req, res) {
 	}
 }
 
-export async function getCarById(req, res) {
+export async function getGigById(req, res) {
 	try {
-		const carId = req.params.id
-		const car = await carService.getById(carId)
-		res.json(car)
+		const gigId = req.params.id
+		const gig = await gigService.getById(gigId)
+		res.json(gig)
 	} catch (err) {
-		logger.error('Failed to get car', err)
-		res.status(400).send({ err: 'Failed to get car' })
+		logger.error('Failed to get gig', err)
+		res.status(400).send({ err: 'Failed to get gig' })
 	}
 }
 

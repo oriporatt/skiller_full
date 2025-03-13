@@ -28,7 +28,7 @@ async function login(username, password) {
 	return user
 }
 
-async function signup({ username, password, fullname, imgUrl, isAdmin }) {
+async function signup({ username, password, fullname }) {
 	const saltRounds = 10
 
 	logger.debug(`auth.service - signup with username: ${username}, fullname: ${fullname}`)
@@ -38,14 +38,13 @@ async function signup({ username, password, fullname, imgUrl, isAdmin }) {
 	if (userExist) return Promise.reject('Username already taken')
 
 	const hash = await bcrypt.hash(password, saltRounds)
-	return userService.add({ username, password: hash, fullname, imgUrl, isAdmin })
+	return userService.add({ username, password: hash, fullname })
 }
 
 function getLoginToken(user) {
 	const userInfo = { 
         _id: user._id, 
         fullname: user.fullname, 
-        score: user.score,
         isAdmin: user.isAdmin,
     }
 	return cryptr.encrypt(JSON.stringify(userInfo))

@@ -1,7 +1,7 @@
 import express from 'express'
 
 import { login, signup, logout } from './auth.controller.js'
-
+import { log } from '../../middlewares/logger.middleware.js'
 const router = express.Router()
 
 router.post('/login', login)

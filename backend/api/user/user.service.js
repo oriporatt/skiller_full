@@ -19,7 +19,8 @@ async function query(filterBy = {}) {
         var users = await collection.find(criteria).toArray()
         users = users.map(user => {
             delete user.password
-            user.createdAt = user._id.getTimestamp()
+            // user.createdAt = user._id.getTimestamp()
+            
             // Returning fake fresh data
             // user.createdAt = Date.now() - (1000 * 60 * 60 * 24 * 3) // 3 days ago
             return user
@@ -41,11 +42,11 @@ async function getById(userId) {
 
         criteria = { byUserId: userId }
 
-        user.givenReviews = await reviewService.query(criteria)
-        user.givenReviews = user.givenReviews.map(review => {
-            delete review.byUser
-            return review
-        })
+        // user.givenReviews = await reviewService.query(criteria)
+        // user.givenReviews = user.givenReviews.map(review => {
+        //     delete review.byUser
+        //     return review
+        // })
 
         return user
     } catch (err) {
@@ -83,7 +84,7 @@ async function update(user) {
         const userToSave = {
             _id: ObjectId.createFromHexString(user._id), // needed for the returnd obj
             fullname: user.fullname,
-            score: user.score,
+
         }
         const collection = await dbService.getCollection('user')
         await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
@@ -100,10 +101,10 @@ async function add(user) {
 		const userToAdd = {
 			username: user.username,
 			password: user.password,
-			fullname: user.fullname,
-			imgUrl: user.imgUrl,
-			isAdmin: user.isAdmin,
-			score: 100,
+			fullname: user.fullname
+			// imgUrl: user.imgUrl,
+			// isAdmin: user.isAdmin,
+
 		}
 		const collection = await dbService.getCollection('user')
 		await collection.insertOne(userToAdd)
@@ -126,9 +127,6 @@ function _buildCriteria(filterBy) {
 				fullname: txtCriteria,
 			},
 		]
-	}
-	if (filterBy.minBalance) {
-		criteria.score = { $gte: filterBy.minBalance }
 	}
 	return criteria
 }

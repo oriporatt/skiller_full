@@ -36,9 +36,8 @@ if (process.env.NODE_ENV === 'production') {
 
 app.all('*', setupAsyncLocalStorage)
 
-// app.use('/api/auth', authRoutes)
-// app.use('/api/user', userRoutes)
-// app.use('/api/review', reviewRoutes)
+app.use('/api/auth', authRoutes)
+app.use('/api/user', userRoutes)
 app.use('/api/gig', gigRoutes)
 
 setupSocketAPI(server)

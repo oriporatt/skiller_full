@@ -39,17 +39,16 @@ async function query(filterBy = { txt: '' }) {
 	}
 }
 
-async function getById(carId) {
+async function getById(gigId) {
 	try {
-        const criteria = { _id: ObjectId.createFromHexString(carId) }
+        const criteria = { _id: ObjectId.createFromHexString(gigId) }
 
-		const collection = await dbService.getCollection('car')
-		const car = await collection.findOne(criteria)
+		const collection = await dbService.getCollection('gig')
+		const gig = await collection.findOne(criteria)
         
-		car.createdAt = car._id.getTimestamp()
-		return car
+		return gig
 	} catch (err) {
-		logger.error(`while finding car ${carId}`, err)
+		logger.error(`while finding gig ${gigId}`, err)
 		throw err
 	}
 }
