@@ -96,7 +96,7 @@ export function GigDetails() {
   function buildOrderObj(){
     let newOrder={}
     const client=userService.getLoggedinUser()
-
+    if (!client) return(newOrder)
     newOrder.clientId=client._id
     newOrder.clientFullName=client.fullname
 
