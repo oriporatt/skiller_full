@@ -3,7 +3,7 @@ const { DEV, VITE_LOCAL } = import.meta.env
 import { getRandomIntInclusive, makeId } from '../util.service'
 
 import { orderService as local } from './order.service.local'
-// import { gigService as remote } from './car.service.remote'
+import { orderService as remote } from './order.service.remote'
 
 // function getEmptyOrder() {
 // 	return {
@@ -22,7 +22,7 @@ function getDefaultFilter() {
     }
 }
 
-const service = VITE_LOCAL === 'true' ? local : local //remote
+const service = VITE_LOCAL === 'true' ? local : remote 
 export const orderService = { getDefaultFilter,
     ...service }
 

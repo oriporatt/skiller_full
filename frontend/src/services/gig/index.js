@@ -72,7 +72,7 @@ function getDefaultFilter() {
     }
 }
 
-const service = VITE_LOCAL === 'true' ? local : remote //remote
+const service = VITE_LOCAL === 'true' ? local : remote 
 export const gigService = { getEmptyCar, getDefaultFilter,
     categories,uncheckedFilterArray,sellerLevels, sellerRates,budgetList,deliveryTimeList,
     ...service }
