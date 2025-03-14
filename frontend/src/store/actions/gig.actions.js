@@ -1,4 +1,4 @@
-import { gigService } from '../../services/gig/gig.service.local'
+import { gigService } from '../../services/gig/index'
 import { store } from '../store'
 import { ADD_GIG, REMOVE_GIG,SET_GIG,SET_GIGS,UPDATE_GIG } from '../reducers/gig.reducer'
 
@@ -18,7 +18,7 @@ export async function loadGigs(filterBy) {
 
 export async function loadGig(gigId) {
     try {
-        const gig = await carService.getById(gigId)
+        const gig = await gigService.getById(gigId)
         store.dispatch(
             {
                 type: SET_GIG,

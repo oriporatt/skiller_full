@@ -1874,3 +1874,33 @@
 13.3.2025, 21:54:10 - DEBUG - auth.service - login with username: Mei
 13.3.2025, 21:54:10 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001fa","fullname":"Mei Ling","username":"Mei","cv":"I am a highly skilled translator specializing in English to Mandarin and vice versa. With over 10 years of experience, I have worked with businesses, authors, and content creators to provide accurate and culturally appropriate translations. My services cover documents, websites, and subtitles. Let’s bridge the language barrier together!","level":"premium","rate":4.9,"from":"China","memberSince":2013,"avgResponseTime":10,"languages":["Mandarin","English"],"imageUrl":"https://randomuser.me/api/portraits/women/21.jpg"}
 13.3.2025, 21:54:17 - INFO - /api/order | POST | {"clientId":"67d1f647e6b06d8c42a001f9","clientFullName":"Mei Ling","providerId":"67d1f647e6b06d8c42a001fa","providerFullname":"Mei Ling","gigId":"67d1ff41e6b06d8c42a0020b","gigTitle":"Test from Postman","createdAt":1741892711500,"deliveryDate":"2025-03-15T19:05:11.500Z","status":"pending","package":"Basic","total":95} | {} | 67d1f647e6b06d8c42a001fa
+14.3.2025, 10:03:04 - INFO - Server is running on port: 3030
+14.3.2025, 10:03:31 - INFO - Server is running on port: 3030
+14.3.2025, 10:04:49 - INFO - /api/gig | GET | {} | {"id":"i104"}
+14.3.2025, 10:04:49 - ERROR - while finding gig i104 | BSONError: hex string must be 24 characters
+14.3.2025, 10:04:49 - ERROR - Failed to get gig | BSONError: hex string must be 24 characters
+14.3.2025, 10:04:52 - INFO - /api/gig | GET | {} | {"id":"i104"}
+14.3.2025, 10:04:52 - ERROR - while finding gig i104 | BSONError: hex string must be 24 characters
+14.3.2025, 10:04:52 - ERROR - Failed to get gig | BSONError: hex string must be 24 characters
+14.3.2025, 10:05:10 - INFO - /api/gig | GET | {} | {"id":"i104"}
+14.3.2025, 10:05:10 - ERROR - while finding gig i104 | BSONError: hex string must be 24 characters
+14.3.2025, 10:05:10 - ERROR - Failed to get gig | BSONError: hex string must be 24 characters
+14.3.2025, 10:14:05 - INFO - Server is running on port: 3030
+14.3.2025, 10:17:17 - INFO - Server is running on port: 3030
+14.3.2025, 10:17:42 - INFO - Server is running on port: 3030
+14.3.2025, 10:18:30 - INFO - Server is running on port: 3030
+14.3.2025, 10:19:02 - INFO - Server is running on port: 3030
+14.3.2025, 10:19:37 - INFO - Server is running on port: 3030
+14.3.2025, 10:23:08 - INFO - Server is running on port: 3030
+14.3.2025, 10:23:33 - INFO - Server is running on port: 3030
+14.3.2025, 10:23:35 - INFO - Server is running on port: 3030
+14.3.2025, 10:27:32 - INFO - Server is running on port: 3030
+14.3.2025, 10:32:35 - INFO - Server is running on port: 3030
+14.3.2025, 10:32:40 - INFO - /api/gig | GET | {} | {}
+14.3.2025, 10:32:40 - INFO - /api/gig | GET | {} | {}
+14.3.2025, 10:32:53 - INFO - /api/gig | GET | {} | {}
+14.3.2025, 10:32:54 - INFO - /api/gig | GET | {} | {}
+14.3.2025, 10:33:43 - INFO - /api/gig | GET | {} | {}
+14.3.2025, 10:33:43 - INFO - /api/gig | GET | {} | {}
+14.3.2025, 10:34:12 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020f"}
+14.3.2025, 10:34:16 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020f"}

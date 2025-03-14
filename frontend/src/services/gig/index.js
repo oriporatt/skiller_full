@@ -3,7 +3,7 @@ const { DEV, VITE_LOCAL } = import.meta.env
 import { getRandomIntInclusive, makeId } from '../util.service'
 
 import { gigService as local } from './gig.service.local'
-// import { gigService as remote } from './car.service.remote'
+import { gigService as remote } from './gig.service.remote'
 
 function getEmptyCar() {
 	return {
@@ -42,15 +42,20 @@ const deliveryTimeList=[
 
 ]
 
+const categories = ['Graphics & Design','Programming & Tech','Digital Marketing',
+    'Video & Animation','Writing & Translation','Music & Audio',
+    'Business','Finance','AI Services',
+    'Personal Growth','Consulting','Photography']
 
  
-const uncheckedFilterArray =local.categories.map(category=>{
+const uncheckedFilterArray =categories.map(category=>{
     return (
         {
         category: category,
         active:false,
         })
 })
+
 
 function getDefaultFilter() {
     return {
@@ -67,12 +72,13 @@ function getDefaultFilter() {
     }
 }
 
-const service = VITE_LOCAL === 'true' ? local : local //remote
+const service = VITE_LOCAL === 'true' ? local : remote //remote
 export const gigService = { getEmptyCar, getDefaultFilter,
-    uncheckedFilterArray,sellerLevels, sellerRates,budgetList,deliveryTimeList,
+    categories,uncheckedFilterArray,sellerLevels, sellerRates,budgetList,deliveryTimeList,
     ...service }
 
 // Easy access to this service from the dev tools console
 // when using script - dev / dev:local
 
-if (DEV) window.carService = gigService
+if (DEV) window.gigService = gigService
+
