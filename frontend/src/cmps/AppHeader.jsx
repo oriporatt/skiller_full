@@ -191,7 +191,7 @@ export function AppHeader() {
 					</div>}
 						
 
-					{!user && <NavLink to="login" className="login-link">Sing in</NavLink>}
+					{!user && <NavLink to="login" className="login-link">Sign in</NavLink>}
 					{!user && <NavLink className='join' to="login/signup"><button>Join</button></NavLink>}
 					{user && (
 						<div className="user-info"
