@@ -20,6 +20,7 @@ async function remove(orderId) {
 }
 async function save(order) {
     var savedOrder
+    console.log(order)
     if (order._id) {
         savedOrder = await httpService.put(`order/${order._id}`, order)
     } else {

@@ -1,4 +1,4 @@
-import { userService } from '../../services/user/user.service.local'
+import { userService } from '../../services/user'
 import { socketService } from '../../services/socket.service'
 import { store } from '../store'
 

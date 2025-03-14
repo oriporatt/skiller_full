@@ -53,7 +53,7 @@ export function SellerIndex() {
             }
         })
         calcStats()
-        console.log(statsObj)
+
     }
 
     function formatTimestamp(timestamp) {

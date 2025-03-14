@@ -8,7 +8,7 @@ export const gigService = {
 }
 
 async function query(filterBy = {txt:'' }) {
-    return httpService.get(`gig`, filterBy)
+    return httpService.post(`gig`, filterBy)
 }
 
 function getById(gigId) {

@@ -8,10 +8,9 @@ function getEmptyUser() {
         username: '', 
         password: '', 
         fullname: '',
-        isAdmin: false,
-        score: 100,
     }
 }
+
 
 const service = VITE_LOCAL === 'true' ? local : remote
 export const userService = { ...service, getEmptyUser }

@@ -38,3 +38,14 @@ export async function AddOrder(req, res) {
 	}
 }
 
+export async function updateOrder(req, res) {
+
+	try {
+		var order = req.body
+		const updatedOrder = await orderService.update(order)
+		res.send(updatedOrder)
+	} catch (err) {
+		logger.error('Failed to update order', err)
+		res.status(400).send({ err: 'Failed to update order' })
+	}
+}

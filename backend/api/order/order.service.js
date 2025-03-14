@@ -4,7 +4,7 @@ import { asyncLocalStorage } from '../../services/als.service.js'
 import { logger } from '../../services/logger.service.js'
 import { dbService } from '../../services/db.service.js'
 
-export const orderService = { query, remove, add }
+export const orderService = { query, remove, add,update }
 
 async function query(filterBy = {}) {
     const criteria = _buildCriteria(filterBy)
@@ -52,6 +52,23 @@ async function add(order) {
         logger.error('cannot add order', err)
         throw err
     }
+}
+
+async function update(order) {
+    try {
+        // Destructure _id and remove it from the update object
+        const { _id, ...updateFields } = order;
+
+        const criteria = { _id: ObjectId.createFromHexString(order._id) }
+
+		const collection = await dbService.getCollection('order')
+		await collection.updateOne(criteria, { $set: updateFields })
+
+		return order
+	} catch (err) {
+		logger.error(`cannot update order ${order._id}`, err)
+		throw err
+	}
 }
 
 function _buildCriteria(filterBy) {
