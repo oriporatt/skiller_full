@@ -20,6 +20,8 @@ import { loadOrders } from '../store/actions/order.actions'
 import { orderService } from '../services/order'
 import { StatusModal } from '../cmps/StatusModal'
 import { updateOrder } from '../store/actions/order.actions'
+import { OrderList } from '../cmps/OrderList'
+
 
 export function SellerIndex() {
     const dispatch = useDispatch()
@@ -115,11 +117,8 @@ export function SellerIndex() {
       }
     
 
-    const [activeRow, setActiveRow] = useState(null);
+
     
-    function toggleModal(id){
-        setActiveRow((prev) => (prev === id ? null : id));
-    }
 
     function onSubmitStatus(newStatus,orderId){
         let oldOrder={}
@@ -133,8 +132,6 @@ export function SellerIndex() {
                 status: newStatus
             }
         updateOrder(newOrder)
-        setActiveRow(null)
-
     }
 
 
@@ -162,31 +159,31 @@ export function SellerIndex() {
                     </div>
                 </div>
 
-                <div className='buttom-details'>
+                <ul className='buttom-details'>
 
-                    <div className='name-line'>
+                    <li className='name-line'>
                         <Fullname/>
                         <h6>Full Name</h6>
                         <h6 className='data-bold'>{seller.fullname}</h6>
-                    </div>
-                    <div className='from-line'>
+                    </li>
+                    <li className='from-line'>
                         <Location/>
                         <h6>From</h6>
                         <h6 className='data-bold'>{seller.from}</h6>
-                    </div>
-                    <div className='member-since'>
+                    </li>
+                    <li className='member-since'>
                         <Member/>
                         <h6>Member Since</h6>
                         <h6 className='data-bold'>{seller.memberSince}</h6>
-                    </div>
+                    </li>
 
-                    <div className='response-line'>
+                    <li className='response-line'>
                         <ResponseTime/>
                         <h6>Avg. Response Time</h6>
                         <h6 className='data-bold'>{seller.avgResponseTime} min.</h6>
-                    </div>
+                    </li>
 
-                </div>
+                </ul>
             </div>
             
             
@@ -228,60 +225,11 @@ export function SellerIndex() {
 
                 <div className='manage-orders'>
                     <h3>Manage Orders</h3>
-                    <table className='gig-order-table'>
-                        <thead>
-                            <tr>
-                                <th>BUYER</th>
-                                <th>GIG</th>
-                                <th>ORDER AT</th>
-                                <th>DELIVERY AT</th>
-                                <th>TOTAL</th>
-                                <th>STATUS</th>
-                                <th></th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {sellerOrders.map((thisOrder,row) => (
-                                <tr key={thisOrder._id} className='this-row'>
-                                    <td>
-                                        <div className='client-element'>
-                                            <img  src={thisOrder.clientUrl}/>
-                                            <h4>{thisOrder.clientFullName}</h4>
-                                        </div>
-                                    </td>
-                                    <td>{thisOrder.gigTitle}</td>
-                                    <td className='order-at'><span className='for-card'>Order At</span>{thisOrder.createdAtFormatted}</td>
-                                    <td className='delivery-at'><span className='for-card'>Delivery At</span>{thisOrder.deliveryDateFormatted}</td>
-                                    <td>{thisOrder.total}$</td>
-                                    <td className='gig-status' onClick={() => toggleModal(row)}>
-                                        {thisOrder.status==="pending"&&<span className='pending'>Pending</span>}                                    
-                                        {thisOrder.status==="approved"&&<span className='approved'>Approved</span>}                                    
-                                        {thisOrder.status==="in-progress"&&<span className='in-progress'>In Progress</span>}                                    
-                                        {thisOrder.status==="completed"&&<span className='completed'>Completed</span>}                                    
-                                        {thisOrder.status==="rejected"&&<span className='rejected'>Rejected</span>}                                    
-                                    </td>
-
-                                
-                                    <td className='gig-status-menu' >
-                                        <ThreeDots onClick={() => toggleModal(row)}/>
-                                        {activeRow === row && (
-                                        <StatusModal setActiveRow={setActiveRow} 
-                                                    initialStatus={thisOrder.status} 
-                                                    onSubmitStatus={onSubmitStatus}
-                                                    orderId={thisOrder._id}
-                                                    />
-                                        )}
-                                    </td>
-
-
-
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                    
+                    <OrderList sellerOrders={sellerOrders} 
+                                onSubmitStatus={onSubmitStatus}
+                                />
                 </div>
+
             </div>
 
         </main>

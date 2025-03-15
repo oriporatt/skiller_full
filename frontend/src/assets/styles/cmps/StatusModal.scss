@@ -2,7 +2,10 @@
 @use "../setup/mixins";
 @use "../setup/variables";
 
+.status-modal{
+}
 .modal-div {
+
     position: absolute;
     top: 40px; 
     right: 0;
@@ -11,7 +14,7 @@
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    z-index: 100;
+    z-index: 110;
     p{
         margin-top: 5px;
         margin-left: 8px;

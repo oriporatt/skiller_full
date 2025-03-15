@@ -2,7 +2,10 @@
 @use "../setup/mixins";
 @use "../setup/variables";
 
-
+.seller-index{
+    height: 100%;
+    
+}
 
 .seller-profile{
     grid-column: 1;
@@ -65,9 +68,12 @@
 }
 
 .buttom-details{
-  display: flex;
-  flex-direction: column;
-  
+    display: flex;
+    flex-direction: column;
+    li{
+        display: grid;
+        grid-template-columns: 20px 1fr auto;
+    }
     h6{
         font-size:functions.rem(14px); 
         margin: 0;
@@ -103,8 +109,9 @@
         display: grid;
         grid-template-columns: auto 1fr auto;
         svg{
-            height: functions.rem(20px); 
-            width: functions.rem(20px); 
+            height: functions.rem(16px); 
+            width: functions.rem(16px); 
+            align-self: center;
         }
 
     }
@@ -121,130 +128,8 @@
     }
 }
 
-.gig-order-table{
-    border: 1px solid variables.$lightGray;
+.manage-orders{
 
-    box-shadow: 0 0 .880517px rgba(0,0,0,.029),0 0 2.29197px rgba(0,0,0,.03),0 0 5.52px rgba(0,0,0,.054),0 0 11px rgba(0,0,0,.09);  
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 5px;
-    margin-bottom: functions.rem(50px); 
-
-    thead {
-        border: 1px solid variables.$lightGray;
-        position: sticky;
-        top:-1px;
-        background: white;
-
-
-    }
-    th, td {
-        padding: 8px;
-        text-align: center;
-        word-wrap: break-word; 
-        overflow: hidden;
-    }
-    th {
-        padding: 8px;
-        text-align: center;
-        font-size: functions.rem(14px); 
-        font-weight: 400 ;
-        color: variables.$black;;
-
-    }
-    tr{
-        border-bottom: 1px solid variables.$lightGray;
-    }
-    td {
-        padding: 8px;
-        color: variables.$black;
-        font-size: functions.rem(14px); ;
-
-        .client-element{
-            display: flex;
-            align-items: center;
-            gap:8px;
-            width: 100%;
-            justify-content: flex-start;
-            img{
-                border-radius: 50%;
-                height: functions.rem(35px); 
-                width: functions.rem(35px); 
-            }
-            h4{
-                margin: 0;
-                line-height: functions.rem(20px);
-                font-size: functions.rem(14px);
-            }
-        }
-        &.order-at{
-            text-align: center;
-            font-size: functions.rem(12px);
-            color: rgb(1, 1, 101);
-            max-width: 100px;
-            line-height:  functions.rem(15px);;
-        }
-        &.delivery-at{
-            text-align: center;
-            font-size: functions.rem(12px);
-            color: rgb(60, 0, 0);
-            max-width: 80px;
-            line-height:  functions.rem(15px);;
-        }
-
-    }
-    table, tr, td {
-        overflow: visible;
-    }
-
-    .gig-status-menu{
-        position: relative;
-        svg{
-            padding-top: 4px;
-            height: functions.rem(16px); 
-            width: functions.rem(16px);   
-            cursor: pointer;
- 
-        }
-    }
-}
-
-.this-row{
-    &:hover{
-        background-color: variables.$lightGray;
-    }
-}
-
-.gig-status{
-    cursor: pointer;
-    span{
-        border: 1px solid variables.$lightGray;
-        border-radius: 4px;
-        font-size:functions.rem(12px); 
-        font-weight: 400;
-        height: 30px;
-        min-width: 70px;
-        display: inline-block;
-        align-content: center;
-        &.pending{
-            background-color: lightblue;
-        }
-        &.approved{
-            background-color: rgb(93, 128, 255);
-            color: white;
-        }
-        &.in-progress{
-            background-color: rgb(255, 231, 110);
-        }
-        &.completed{
-            background-color: variables.$green;
-            color: white;
-        }
-        &.rejected{
-            background-color: rgb(227, 82, 82);
-            color: white;
-        }
-    }
 }
 
 
@@ -341,7 +226,7 @@
     .stats-and-orders{
         grid-column: 1;
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto 1fr;
         .stats{
             grid-row: 1;
         }
@@ -349,36 +234,6 @@
             grid-row: 2;
             overflow-x: auto; 
         }
-    }
-    .gig-order-table{
-        table {
-            display: block;
-            width: 100%;
-        }
-        
-        thead{
-            display: none;
-        }
-
-        th, td {
-            display: grid;
-            justify-self: center;
-            padding: 8px 10px;
-            border: none;
-            align-items: center;
-        }
-
-        th {
-            // text-align: left;
-            font-weight: bold;
-
-        }
-
-        
-        display: grid;
-        padding: 15px;
-        background-color: #fafafa;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     .for-card{
         display: block;
@@ -391,6 +246,9 @@
 
 
 @include mixins.for-narrow-layout {
+    .seller-index {
+        margin-top: functions.rem(120px);
+    }
     .seller-profile{
         display: none;
     }
@@ -398,7 +256,7 @@
     .stats-and-orders{
         grid-column: 2;
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto 1fr;
         .stats{
             grid-row: 1;
         }
@@ -413,13 +271,7 @@
             // max-height: 500px;
         }
     }
-    th, td {
-        justify-self: center;
-        padding: 8px 10px;
-        border: none;
-        align-items: center;
-        
-    }
+   
     .client-element{
         display: flex;
         flex-direction: column;
@@ -432,6 +284,7 @@
 
 
 @include mixins.for-normal-layout{
+    
     .seller-profile{
         display: block;
     }
@@ -446,7 +299,7 @@
     .stats-and-orders{
         grid-column: 2;
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto 1fr;
         .stats{
             grid-row: 1;
         }
@@ -485,7 +338,7 @@
     .stats-and-orders{
         grid-column: 2;
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto 1fr;
         .stats{
             grid-row: 1;
         }

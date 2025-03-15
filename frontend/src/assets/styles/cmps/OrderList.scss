@@ -1,0 +1,97 @@
+@use "../setup/functions";
+@use "../setup/mixins";
+@use "../setup/variables";
+
+
+
+.gig-order-table{
+    display: grid;
+    grid-template-rows: repeat(auto,1fr);
+    margin-bottom: 300px;
+    .table-header{
+        border-top: 1px solid variables.$lightGray;
+        h4{
+            margin: 0;
+            font-weight: 700;
+        }
+        .buyer-col{
+            justify-self: center
+        }
+    }
+    li article{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr 1fr 0.5fr 0.5fr;
+        border-bottom: 1px solid variables.$lightGray;
+        font-size: functions.rem(14px);
+        align-items: center;
+        gap:5px;
+        padding-top: functions.rem(8px);
+        padding-bottom: functions.rem(8px);
+
+        
+    }
+
+    .client-element{
+        display: flex;
+        align-items: center;
+        gap:8px;
+        width: 100%;
+        justify-content: flex-start;
+        img{
+            border-radius: 50%;
+            height: functions.rem(35px); 
+            width: functions.rem(35px); 
+        }
+        h4{
+            margin: 0;
+            line-height: functions.rem(20px);
+            font-size: functions.rem(14px);
+            font-weight: 600;
+        }
+    }
+}
+
+
+@include mixins.for-mobile-layout {
+
+    .gig-order-table{
+        gap:1rem;
+        .table-header{
+            display: none;
+        }
+        li article{
+            grid-template-columns: none;
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-rows:repeat(6,auto);
+            border-bottom: 1px solid variables.$lightGray;
+            font-size: functions.rem(14px);
+            align-items: center;
+            gap:5px;
+            box-shadow: 0 0 .880517px rgba(0,0,0,.029),0 0 2.29197px rgba(0,0,0,.03),0 0 5.52px rgba(0,0,0,.054),0 0 11px rgba(0,0,0,.09);  
+            padding: 1rem;
+            box-shadow: 0 0 .880517px rgba(0,0,0,.029),0 0 2.29197px rgba(0,0,0,.03),0 0 5.52px rgba(0,0,0,.054),0 0 11px rgba(0,0,0,.09);  
+            border-radius: functions.rem(8px);
+            margin: functions.rem(8px);
+            justify-items: center;
+            .client-element{
+                justify-content: center;
+            }
+            p{
+                text-align: center;
+                & span.cards {
+                    display: block;
+                    color: darkblue;
+                }
+            }
+            .order-at{
+                font-size: functions.rem(12px);
+                text-align: center;
+            }
+            .delivery-at{
+                font-size: functions.rem(12px);
+
+            }
+        }
+    }
+}
