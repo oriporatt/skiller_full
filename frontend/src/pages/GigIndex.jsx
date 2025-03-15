@@ -73,7 +73,7 @@ export function GigIndex() {
         }        
     }
 
-    
+    if (!gigs) return <h3>Loading...</h3>
     return (
         <main className="gig-index full">
             <div className='main-index main-container'>
