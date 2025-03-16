@@ -44,7 +44,7 @@
 
 
             span{
-                font-family: 'DomaineDisplay', sans-serif; 
+                // font-family: 'DomaineDisplay', sans-serif; 
                 font-weight: 400;
             }
         }
@@ -184,10 +184,13 @@
             height: 400px; 
             div h1{
                 max-width: 800px;
-                font-size: functions.rem(60px);
+                font-size: functions.rem(50px);
                 text-align: center;
                 line-height: functions.rem(67px);
-
+                // max-width: 70%;
+                margin-left: 200px;
+                margin-right: 200px;
+                justify-self: center;
             }
             background-image: url('/img/hero.png');
             background-size: cover; 
