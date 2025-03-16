@@ -147,7 +147,6 @@ export function HomePage() {
     return (
         <section className='home-page '>
             
-
             <div className="main-home-search ">
                 <div>
                     <h1>Scale your professional workforce with <span>freelancers</span></h1>

@@ -158,8 +158,7 @@ export function AppHeader() {
 				</NavLink>
 
 				<NavLink to="/" className="logo">
-					<div className='logo-img'><Skiller/></div>
-					{/* <img src="/img/fiverr_logo.svg" alt="Fiverr Logo" className="logo-img"/> */}
+					<p className="skiller-new-logo">skiller<span>.</span></p>
 				</NavLink>
 
 				{showSearchOnTop&&
