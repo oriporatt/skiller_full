@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 import Linkdn from '../assets/svgs/linkdn.svg?react'
 import Email from '../assets/svgs/email.svg?react'
-import { Link, NavLink ,useLocation} from 'react-router-dom'
+
 
 export function AppFooter() {
 	const count = useSelector(storeState => storeState.userModule.count)
