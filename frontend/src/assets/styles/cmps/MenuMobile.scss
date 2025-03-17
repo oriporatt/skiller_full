@@ -5,13 +5,13 @@
 .menu-mobile {
     position: fixed;
     top: 0;
-    right: -100%;
+    left: -100%;
     width: 80%;
     height: 100%;
     background: white;
-    transition: right 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
     z-index: 120;
     &.active { 
-        right: 0;
+        left: 0;
     }
 }
