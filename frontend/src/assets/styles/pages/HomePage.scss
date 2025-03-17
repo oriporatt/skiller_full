@@ -243,7 +243,14 @@
 .main-categories-list{
     li{
         cursor: pointer;
+        &:hover{
+            background: radial-gradient(63.44% 63.44% at 50% 50%, rgba(194, 255, 226, 0.3) 0%, #fff 100%), #fff;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            transition: transform 0.75s ease-in-out, box-shadow 0.75s ease-in-out;
+        }
     }
+
     display: grid;
     @include mixins.for-mobile-layout{
 
@@ -531,33 +538,40 @@
 .skiller-pro{
     background-color: #e8faf4;
     border-radius:  functions.rem(16px); 
-    padding:functions.rem(24px)functions.rem(16px)  functions.rem(36px) functions.rem(24px) ;
+    padding:functions.rem(32px)functions.rem(32px)  functions.rem(64px) functions.rem(24px) ;
     margin: functions.rem(16px); 
     display: flex;
     flex-direction: column;
+
     h2{
-        font-size: functions.rem(40px); 
+        font-size: functions.rem(30px); 
         font-family: 'Montserrat', sans-serif;
+        margin-bottom: 0;
         span{
+            font-size:  functions.rem(30px); 
             font-weight: bold;
+            font-family: 'Proximanova', sans-serif;
+            margin-right: 5px;
         }
     }
 
     h1{
-        font-size: functions.rem(32px); 
+        padding:functions.rem(30px) functions.rem(12px) functions.rem(10px) 0; 
+        font-size: functions.rem(48px); 
+        letter-spacing: -2px;
+        margin: 0;
         span {
             font-family: DomaineDisplay, "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-style: normal; 
             color: #1dbf73;
         }
+
     }
     li{
-        display: grid;
-        grid-template-columns: auto 1fr;
+        display: flex;
+        flex-direction: column;
         div{
-            grid-row: 1;
-            display: flex;
-            gap: functions.rem(22px); 
+            display: grid;
             align-items: center;
             h4{
                 margin: 0;
@@ -565,7 +579,6 @@
             }
         }
         p{
-            grid-row: 2;
             font-size: functions.rem(14px); 
             color: variables.$black;
             line-height:  functions.rem(22px); 
@@ -587,6 +600,14 @@
     }
 
     @include mixins.for-mobile-layout{
+        h2{
+            align-self: center;
+        }
+        h1{
+            text-align: center; 
+            line-height: 60px;
+            font-size: functions.rem(36px);
+        }
         ul{
             display: grid;
             gap: functions.rem(16px);
@@ -597,20 +618,76 @@
         button{
             align-self: center;
         }
+        li{
+            justify-items: center;
+            .title{
+                justify-items: center;
+                h4{
+                    text-align: center;
+                }
+            }
+            p{
+                text-align: center;
+            }
+        }
     }
+
     @include mixins.for-narrow-layout{
+        
+        margin-left: clamp(0px, 100px, 100px);
+        margin-right: clamp(0px, 100px, 100px);
+
+
+        h2{
+            align-self: center;
+        }
+        h1{
+            text-align: center; 
+            line-height: 60px;
+            font-size: functions.rem(36px);
+
+        }
         ul{
             display: grid;
-            grid-template-columns: repeat(2,1fr);
             gap: functions.rem(16px);
         }
         img{
             display: none;
         }
+        button{
+            align-self: center;
+        }
+        li{
+            justify-items: center;
+            .title{
+                justify-items: center;
+                h4{
+                    text-align: center;
+                }
+            }
+            p{
+                text-align: center;
+            }
+        }
     }
+
+    // @include mixins.for-narrow-layout{
+    //     ul{
+    //         display: grid;
+    //         grid-template-columns: repeat(2,1fr);
+    //         gap: functions.rem(16px);
+    //     }
+    //     img{
+    //         display: none;
+    //     }
+    // }
     @include mixins.for-normal-layout{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding-left: functions.rem(80px);
+        h1{
+
+        }
         > :not(:nth-child(4)) {
             grid-column: 1; 
         }
@@ -626,6 +703,8 @@
     @include mixins.for-wide-layout{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding-left: functions.rem(80px);
+
         > :not(:nth-child(4)) {
             grid-column: 1; 
         }
