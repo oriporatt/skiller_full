@@ -4,7 +4,7 @@
 
 
 .home-page{
-
+    
     margin-top: functions.rem(80px);
     @include mixins.for-narrow-layout{
         grid-column: -1/1;
@@ -246,7 +246,6 @@
         &:hover{
             background: radial-gradient(63.44% 63.44% at 50% 50%, rgba(194, 255, 226, 0.3) 0%, #fff 100%), #fff;
             transform: translateY(-5px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
             transition: transform 0.75s ease-in-out, box-shadow 0.75s ease-in-out;
         }
     }
@@ -461,25 +460,34 @@
   }
 
 .popular-services-h1{
-    margin-left: 1rem;
+    margin-left: 0;
     margin-top: functions.rem(32px);
     margin-bottom:functions.rem(32px); ;
     font-size: functions.rem(32px);
     font-weight: 400;
     line-height: 38px;
+    @include mixins.for-mobile-layout{
+        margin-left: 1rem;
+    }
+    @include mixins.for-narrow-layout{
+        margin-left: 1rem;
+    }
 }
 
 .popular-services-list{
     display: grid;
-    gap:1rem;
     justify-items: center;
+    margin: 0;
+    justify-content: space-between; 
+    grid-template-columns: repeat(6,functions.rem(135px));
     li{
         box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 10px 0px;
-        width: functions.rem(135px);
+        width: 100%;
         height:functions.rem(180px); ;
         border-radius: 8px;
         display: grid;
         grid-template-rows: 1fr 2fr;
+        
     }
     h4{
         padding-top: 10px;
@@ -518,19 +526,23 @@
     }
 
     @include mixins.for-mobile-layout{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, functions.rem(135px));
+        justify-content: space-around;
+        gap: 1rem;
     }
     @include mixins.for-narrow-layout{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, functions.rem(135px));
+        justify-content: space-around;
+        gap: 1rem;
     }
-    @include mixins.for-normal-layout{
-        grid-auto-flow: column;
-        grid-template-columns: repeat(auto, 1fr);
-    }
-    @include mixins.for-wide-layout{
-        grid-auto-flow: column;
-        grid-template-columns: repeat(auto, 1fr);
-    }
+    // @include mixins.for-normal-layout{
+    //     grid-auto-flow: column;
+    //     grid-template-columns: repeat(auto, 1fr);
+    // }
+    // @include mixins.for-wide-layout{
+    //     grid-auto-flow: column;
+    //     grid-template-columns: repeat(auto, 1fr);
+    // }
 
 
 }
@@ -539,7 +551,8 @@
     background-color: #e8faf4;
     border-radius:  functions.rem(16px); 
     padding:functions.rem(32px)functions.rem(32px)  functions.rem(64px) functions.rem(24px) ;
-    margin: functions.rem(16px); 
+    margin: functions.rem(16px) 0 functions.rem(16px) 0; 
+    margin-top: functions.rem(60px); ;
     display: flex;
     flex-direction: column;
 
@@ -671,16 +684,7 @@
         }
     }
 
-    // @include mixins.for-narrow-layout{
-    //     ul{
-    //         display: grid;
-    //         grid-template-columns: repeat(2,1fr);
-    //         gap: functions.rem(16px);
-    //     }
-    //     img{
-    //         display: none;
-    //     }
-    // }
+
     @include mixins.for-normal-layout{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -721,8 +725,8 @@
 
 .freelancer-add{
     margin-top: functions.rem(40px);
-    margin-left: 1rem;
-    margin-right: 1rem;
+    // margin-left: 1rem;
+    // margin-right: 1rem;
     display: grid;
     h2{
 
@@ -751,9 +755,12 @@
         border-radius: 10px;
         font-weight: 400;
         font-size: 1rem;
+        margin-top: 20px;
     }
 
     @include mixins.for-mobile-layout{
+        margin-left: 1rem;
+        margin-right: 1rem;
         ul{
             display: grid;
             gap: functions.rem(32px);
@@ -763,11 +770,12 @@
     }
 
     @include mixins.for-narrow-layout{
+        margin-left: 1rem;
+        margin-right: 1rem;
         ul{
             display: grid;
             gap: functions.rem(32px);
-            margin-left: 1rem;
-            margin-right: 1rem;
+
         }
     }
 
@@ -777,8 +785,8 @@
             grid-auto-flow: column;
             grid-template-columns: repeat(4,fr);
             gap: functions.rem(32px);
-            margin-left: 1rem;
-            margin-right: 1rem;
+            // margin-left: 1rem;
+            // margin-right: 1rem;
         }
         li{
             display: grid;
@@ -798,8 +806,8 @@
             grid-auto-flow: column;
             grid-template-columns: repeat(4,fr);
             gap: functions.rem(32px);
-            margin-left: 1rem;
-            margin-right: 1rem;
+            // margin-left: 1rem;
+            // margin-right: 1rem;
         }
         li{
             display: grid;
