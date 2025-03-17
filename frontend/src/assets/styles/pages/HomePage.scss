@@ -157,7 +157,7 @@
             background: linear-gradient(180deg, #003912 36.72%, #19aa64 141.43%);
             height: 350px; 
             div h1{
-                max-width: 350px;
+                max-width: 400px;
                 font-size: functions.rem(40px);
                 text-align: center;
                 line-height: functions.rem(45px);
@@ -181,7 +181,7 @@
             padding-top: none;
             
             //img:
-            height: 400px; 
+            height: 450px; 
             div h1{
                 max-width: 800px;
                 font-size: functions.rem(50px);
@@ -345,22 +345,20 @@
             grid-template-rows: 1fr 1fr;
             box-sizing: border-box;
             overflow: hidden;
+            padding-left: 10px;
             .svg-element-main{
                 grid-row: 1;
                 justify-self: start;
                 align-self: end;
                 max-width: 30px;
                 aspect-ratio: 1 / 1;
-                padding-top: 10%;
-                padding-left: 10%;
                 color: #222325;
+                
             }
             h3{
                 justify-self: start;
+                font-weight: 700;
                 grid-row: 2;
-                padding-left: 5%;
-                padding-right: 5%;
-                padding-bottom: 5%;
                 font-size: functions.rem(14px);
                 color: #222325;
             }
@@ -384,23 +382,20 @@
             grid-template-rows: 1fr 1fr;
             box-sizing: border-box;
             overflow: hidden;
-            
+            padding-left: 10px;
             .svg-element-main{
                 grid-row: 1;
                 justify-self: start;
                 align-self: end;
                 max-width: 30px;
                 aspect-ratio: 1 / 1;
-                padding-top: 10%;
-                padding-left: 10%;
                 color: #222325;
+                
             }
             h3{
                 justify-self: start;
+                font-weight: 700;
                 grid-row: 2;
-                padding-left: 5%;
-                padding-right: 5%;
-                padding-bottom: 5%;
                 font-size: functions.rem(14px);
                 color: #222325;
             }
@@ -410,8 +405,6 @@
 
 .home-main-categories{
     position: relative;
-    border-bottom: 1px solid variables.$lightGray;
-
 
 }
 
@@ -426,25 +419,7 @@
 
     }
 
-    // same for wide and normal:
-    @include mixins.for-wide-layout {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: variables.$white;
-        color: #222325;
-        border: none;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 0 .880517px rgba(0,0,0,.029),0 0 2.29197px rgba(0,0,0,.03),0 0 5.52px rgba(0,0,0,.054),0 0 11px rgba(0,0,0,.09);  
-        font-size: functions.rem(20px);
-        z-index: 60;
-    }
+
     @include mixins.for-normal-layout{
         position: absolute;
         top: 50%;
@@ -463,6 +438,10 @@
         font-size: functions.rem(20px);
         z-index: 40;
     }
+    // same for wide and normal:
+    @include mixins.for-wide-layout {
+        display: none;
+    }
   }
   
   .scroll-button.left {
@@ -475,7 +454,8 @@
   }
 
 .popular-services-h1{
-    margin-top: functions.rem(50px);
+    margin-left: 1rem;
+    margin-top: functions.rem(32px);
     margin-bottom:functions.rem(32px); ;
     font-size: functions.rem(32px);
     font-weight: 400;

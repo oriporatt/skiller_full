@@ -219,7 +219,7 @@ export function HomePage() {
                 </ul>
             </div>
             
-            <div className="home-main-categories main-container">
+            <div className="home-main-categories">
             
                 {leftScrollButton&&<button className="scroll-button left" onClick={scrollLeft} >
                     {"<"}

@@ -19,8 +19,8 @@
     @include mixins.for-normal-layout {
         grid-template-columns: 
             2rem
-            1fr
-            2rem;
+            minmax( variables.$narrow-breakpoint,auto)
+            2rem
     }
     @include mixins.for-wide-layout {
         grid-template-columns:
