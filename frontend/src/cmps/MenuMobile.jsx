@@ -2,7 +2,7 @@
 export function MenuMobile({showMenuMobile}) {
     console.log(showMenuMobile)
     return (
-        <div className={`menu-mobile ${showMenuMobile ? 'active' : ''}`} >  
+        <div className={`menu-mobile ${showMenuMobile ? '' : ''}`} >  
                     <button className="close-btn" onClick={() => setIsOpen(false)}>✖</button>
                     <nav>
                         <ul>
