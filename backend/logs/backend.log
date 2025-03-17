@@ -2370,3 +2370,4 @@
 17.3.2025, 19:35:37 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
 17.3.2025, 19:42:34 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
 17.3.2025, 19:45:46 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+17.3.2025, 19:50:34 - INFO - Server is running on port: 3030
