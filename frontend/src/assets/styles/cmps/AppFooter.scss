@@ -1,29 +1,66 @@
 @use "../setup/functions";
 @use "../setup/variables";
+@use "../setup/mixins";
+
 
 .app-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin-top: functions.rem(40px);
 
-    min-height: 3.5rem;
-
-    padding: functions.rem(10px) 1rem;
-    background-color: variables.$clr4;
-
-    p {
-        margin: 0;
-    }
-    
-    span {
-        font-size: .8em;
-        
-        &.local-services {
-            color: variables.$clr1;
+    .footer-elements{
+        height: 100%;
+        .footer-line{
+            border-top:1px solid variables.$lightGray;
         }
-        
-        &.remote-services {
-            color: variables.$clr5;
+
+        .elements-items{
+            min-height: functions.rem(72px);
+            display: grid;
+            grid-template-columns: auto auto 1fr;
+            align-items: center;
+            justify-content: space-between;
+            .skiller-logo-footer{
+
+                font-family: 'Proximanova', sans-serif; 
+                color: rgb(116, 118, 126);
+                font-weight: 700;
+                font-size: functions.rem(28px);
+                letter-spacing:  -.04em;
+                margin: 0;
+                span{
+                    padding-left: 2px;
+                    font-size: functions.rem(24px);
+                    font-family: 'Proximanova', sans-serif; 
+                    font-weight: bold;
+                    // -webkit-text-stroke: 1px #62646A; 
+                    // color: transparent;  
+    
+                }
+            }
+            .skiller-text-footer{
+                margin: 0;
+                font-family: "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size:functions.rem(14px); 
+                margin-left:functions.rem(24px);  
+                color: #B5B6BA;
+
+            }
+            .svgs-links{
+                justify-self: end;
+                display: flex;
+                gap: 1rem;
+                .email{
+                    fill: rgb(116, 118, 126);
+                    height: 20px;
+                    width: 20px;
+                }
+                .linkdn{
+                    fill: rgb(116, 118, 126);
+                    height: 20px;
+                    width: 20px;  
+                }
+            }
         }
     }
 }
+
+

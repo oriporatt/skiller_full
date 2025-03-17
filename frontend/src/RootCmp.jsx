@@ -10,7 +10,7 @@ import { AdminIndex } from './pages/AdminIndex.jsx'
 import { UserDetails } from './pages/UserDetails'
 
 import { AppHeader } from './cmps/AppHeader'
-// import { AppFooter } from './cmps/AppFooter'
+import { AppFooter } from './cmps/AppFooter'
 import { UserMsg } from './cmps/UserMsg.jsx'
 import { LoginSignup } from './pages/LoginSignup.jsx'
 import { Login } from './pages/Login.jsx'
@@ -47,7 +47,7 @@ export function RootCmp() {
                     <Route path="seller" element={<SellerIndex />}></Route>
                 </Routes>
             </main>
-            {/* <AppFooter /> */}
+            <AppFooter />
         </div>
     )
 }
