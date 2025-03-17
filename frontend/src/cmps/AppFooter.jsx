@@ -19,11 +19,8 @@ export function AppFooter() {
 						<a href="https://www.linkedin.com/in/ori-porat-a36298197/"><Linkdn className='linkdn'/></a>
 						
 					</div>
-				</div>
-				
-
+				</div>				
 			</div>
-
 		</footer>
 	)
 }

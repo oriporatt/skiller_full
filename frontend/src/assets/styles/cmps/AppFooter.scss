@@ -66,21 +66,22 @@
                 margin: 0;
                 font-family: "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 font-size:functions.rem(14px); 
-                margin-left:functions.rem(24px);  
+                margin-left:functions.rem(24px); 
+                color: #B5B6BA; 
                 @include mixins.for-mobile-layout{
                     margin-left: 0;
                 }
-                color: #B5B6BA;
+
 
             }
             .svgs-links{
+                display: flex;
+                gap: 1rem;
                 justify-self: end;
                 @include mixins.for-mobile-layout{
                     justify-self: center;
                 }
                 
-                display: flex;
-                gap: 1rem;
                 .email{
                     fill: rgb(116, 118, 126);
                     height: 20px;

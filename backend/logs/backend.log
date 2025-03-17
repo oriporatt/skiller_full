@@ -2371,3 +2371,36 @@
 17.3.2025, 19:42:34 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
 17.3.2025, 19:45:46 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
 17.3.2025, 19:50:34 - INFO - Server is running on port: 3030
+17.3.2025, 21:10:13 - INFO - Server is running on port: 3030
+17.3.2025, 21:10:44 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+17.3.2025, 21:10:44 - ERROR - Cannot Connect to DB | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 21:10:44 - ERROR - Failed to get users | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 21:10:44 - ERROR - Failed to get Mongo collection | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 21:10:44 - ERROR - cannot find users | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 21:10:44 - ERROR - Cannot Connect to DB | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 21:10:44 - ERROR - Failed to get Mongo collection | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 21:10:44 - ERROR - cannot find orders | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 21:10:44 - ERROR - Cannot get orders | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:26:30 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:26:30 - ERROR - Cannot Connect to DB | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:26:30 - ERROR - Failed to get Mongo collection | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:26:30 - ERROR - cannot find users | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:26:30 - ERROR - Failed to get users | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:26:30 - ERROR - Cannot Connect to DB | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:26:30 - ERROR - Failed to get Mongo collection | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:26:30 - ERROR - cannot find orders | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:26:30 - ERROR - Cannot get orders | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:27:18 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:27:18 - ERROR - Cannot Connect to DB | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:27:18 - ERROR - Failed to get Mongo collection | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:27:18 - ERROR - cannot find users | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:27:18 - ERROR - Failed to get users | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:27:18 - ERROR - Cannot Connect to DB | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:27:18 - ERROR - Failed to get Mongo collection | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:27:18 - ERROR - Cannot get orders | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:27:18 - ERROR - cannot find orders | Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.84sjc.mongodb.net | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:27:38 - INFO - Server is running on port: 3030
+17.3.2025, 22:27:43 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:35:11 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:35:12 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+17.3.2025, 22:36:45 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
