@@ -14,10 +14,36 @@
 
         .elements-items{
             min-height: functions.rem(72px);
-            display: grid;
-            grid-template-columns: auto auto 1fr;
-            align-items: center;
-            justify-content: space-between;
+            @include mixins.for-mobile-layout{
+
+                display: grid;
+                grid-auto-flow: row;
+                grid-template-rows: auto auto auto;
+                justify-items: center;
+                    
+
+            
+            }
+            @include mixins.for-narrow-layout{
+                display: grid;
+                grid-template-columns: auto auto 1fr;
+                align-items: center;
+                justify-content: space-between;
+            }
+            @include mixins.for-normal-layout{
+                display: grid;
+                grid-template-columns: auto auto 1fr;
+                align-items: center;
+                justify-content: space-between;
+            }
+            @include mixins.for-wide-layout{
+                display: grid;
+                grid-template-columns: auto auto 1fr;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+
             .skiller-logo-footer{
 
                 font-family: 'Proximanova', sans-serif; 
@@ -41,11 +67,18 @@
                 font-family: "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 font-size:functions.rem(14px); 
                 margin-left:functions.rem(24px);  
+                @include mixins.for-mobile-layout{
+                    margin-left: 0;
+                }
                 color: #B5B6BA;
 
             }
             .svgs-links{
                 justify-self: end;
+                @include mixins.for-mobile-layout{
+                    justify-self: center;
+                }
+                
                 display: flex;
                 gap: 1rem;
                 .email{
@@ -59,8 +92,12 @@
                     width: 20px;  
                 }
             }
+
         }
+
     }
 }
+
+
 
 
