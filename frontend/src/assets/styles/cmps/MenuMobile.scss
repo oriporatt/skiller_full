@@ -5,7 +5,7 @@
 .menu-mobile {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -150%;
     width: 70%;
     height: 100%;
     background: white;
@@ -23,7 +23,7 @@
         padding-left: 12px;
         .close-btn{
 
-            position: relative;
+            // position: relative;
             background-color: variables.$white;
             svg{
                 color: variables.$black;;

@@ -28,8 +28,11 @@
     .side-menu{
         width: functions.rem(27px);
         height: functions.rem(27px);   
-        margin-top: functions.rem(8px); 
+        margin-top:functions.rem(6px); 
         display: block;
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     .skiller-new-logo{
