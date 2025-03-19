@@ -19,7 +19,8 @@ import HomeAccessTalent from '../assets/svgs/homeAccessTalent.svg?react'
 import HomeTime from '../assets/svgs/homeTime.svg?react'
 import HomeQuality from '../assets/svgs/homeQuality.svg?react'
 import HomePay from '../assets/svgs/homePay.svg?react'
-import { MenuMobile } from "../cmps/MenuMobile";
+
+
 
 export function HomePage() {
     const searchBoxEl=useRef(null); 
@@ -35,7 +36,10 @@ export function HomePage() {
 	const searchBoxTextGlobal = useSelector(storeState => storeState.gigModule.filterBy.txt)
 	const [ showX, setShowX ] = useState(false)
 	const [ localInput, setLocalInput ] = useState(searchBoxTextGlobal)
-    const [ showMenuMobile, setShowMenuMobile ] = useState(true)
+
+
+
+
 
     function onSubmitSearch(event) {
         event.preventDefault(); 
@@ -48,6 +52,8 @@ export function HomePage() {
         navigate('/gig')
 
     }
+
+
     
     function onClearSearchBox(event) {
         event.preventDefault(); 
@@ -147,7 +153,6 @@ export function HomePage() {
 
     return (
         <section className='home-page '>
-            <MenuMobile showMenuMobile={showMenuMobile} />
             <div className="main-home-search ">
                 <div>
                     <h1>Scale your professional workforce with <span>freelancers</span></h1>

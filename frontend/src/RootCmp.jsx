@@ -1,5 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router'
+import { useDispatch,useSelector} from 'react-redux'
 
 import { HomePage } from './pages/HomePage'
 import { AboutUs, AboutTeam, AboutVision } from './pages/AboutUs'
@@ -19,13 +20,26 @@ import { GigIndex } from './pages/GigIndex.jsx'
 import { GigDetails } from './pages/GigDetails.jsx'
 import { CategoriesHeader } from './cmps/CategoriesHeader.jsx'
 import { SellerIndex } from './pages/SellerIndex.jsx'
+import { MenuMobile } from "./cmps/MenuMobile.jsx"
+import { SET_SHOW_MENU_MOBILE } from "./store/reducers/system.reducer.js"
 
 export function RootCmp() {
+    const showMenuMobile = useSelector(storeState => storeState.systemModule.showMenuMobile)
+    const dispatch = useDispatch()
+
+    function onCloseMenuModal(){
+        dispatch({
+            type: SET_SHOW_MENU_MOBILE,
+            showMenuMobile: (false)
+        });
+    }
     return (
         <div >
             <AppHeader />
             <CategoriesHeader/>
             <UserMsg />
+            <MenuMobile showMenuMobile={showMenuMobile} onCloseMenuModal={onCloseMenuModal} />
+
             {/* <GigPreviewCarrousel/> */}
             <main className='main-container'>
                 <Routes>

@@ -13,6 +13,9 @@ import {  loadUsers } from '../store/actions/user.actions'
 import { loadOrders } from '../store/actions/order.actions'
 import { orderService } from '../services/order'
 import { OrdersModal } from './OrdersModal'
+import { SET_SHOW_MENU_MOBILE } from '../store/reducers/system.reducer'
+
+
 
 export function AppHeader() {
 	const location = useLocation();
@@ -41,6 +44,17 @@ export function AppHeader() {
 	const navigate = useNavigate()
 	let showSearchOnTop=false
 
+
+	const showMenuMobile = useSelector(storeState => storeState.systemModule.showMenuMobile)
+
+
+    function onToggleMenuModal(){
+        
+        dispatch({
+            type: SET_SHOW_MENU_MOBILE,
+            showMenuMobile: (!showMenuMobile)
+        });
+    }
 	
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -153,9 +167,9 @@ export function AppHeader() {
 	return (
 		<header className={`app-header main-container ${isGigsIndexPage ? 'header-regular' : ''}`}>
 			<div className='header-elements'>
-				<NavLink to="/" className="side-menu">
+				<div to="/" className="side-menu" onClick={()=>onToggleMenuModal()}>
 					<img src="/img/menu.svg" alt="menu" className="menu-img"/>
-				</NavLink>
+				</div>
 
 				<NavLink to="/" className="logo">
 					<p className="skiller-new-logo">skiller<span>.</span></p>

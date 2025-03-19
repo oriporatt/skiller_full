@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    width: 80%;
+    width: 70%;
     height: 100%;
     background: white;
     transition: left 0.3s ease-in-out;
@@ -14,4 +14,66 @@
     &.active { 
         left: 0;
     }
+    border-right: 1px solid variables.$lightGray;
+    padding: 12px;
+    .top-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 12px;
+        .close-btn{
+
+            position: relative;
+            background-color: variables.$white;
+            svg{
+                color: variables.$black;;
+                height: 40px;
+                width: 40px;
+            }
+        }
+        .join-btn{
+            max-width:functions.rem(132px);
+            height:functions.rem(42px);
+            margin:0;
+            color:#fff;
+            background-color:#404145;
+            border-color:#dadbdd;
+            border-width:.0625rem;
+            border-style:solid;
+            border-radius:4px;
+            font-weight:700;
+            font-size:1rem;
+            width:functions.rem(132px);
+            padding-left: functions.rem(12px) functions.rem(24px) functions.rem(12px) functions.rem(24px);
+    
+        }
+    }    
+    ul{
+        display: flex;
+        flex-direction: column;
+        a:hover{
+            text-decoration: none;
+        }
+        li {
+            padding: 12px;
+            border-radius: 12px;
+            font-size:functions.rem(16px);
+            color: #62646A;
+            &:hover{
+                background-color: variables.$lightGray;
+            }
+        }
+        .general{
+            padding-top: 30px;
+            color: variables.$black;
+            &:hover{
+                background-color: variables.$white;
+            }
+
+        }
+    }
+
+
+
+
 }
