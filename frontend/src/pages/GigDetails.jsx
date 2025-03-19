@@ -186,7 +186,9 @@ export function GigDetails() {
 
 
         {gig && <div className='gig-details-div'>
-          <h1 className='gig-title'>{gig.title}</h1>
+          <h1 className='gig-title'>
+            {gig.title}
+          </h1>
           <div className='owner-details-general'>
                   <img  src={gig.owner.imgUrl}/>
                   <div className='owner-details-data'>

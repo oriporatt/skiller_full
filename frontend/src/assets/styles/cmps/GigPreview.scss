@@ -32,8 +32,30 @@
        
         color: variables.$darkGray;
         font-size: functions.rem(16px);
+        &:hover{
+            text-decoration: underline;
+        }
 	}
+    &:hover .gig-title {
+        text-decoration: underline;
+    }
+    .rate{
+        line-height: 0;
+        display: flex;
+        align-items: center;
+        color: variables.$black;
+        font-size: functions.rem(16px);
+        gap: functions.rem(4px);
+        svg{
+        }
+        p{
+            margin-top: functions.rem(6px);
+            margin-bottom: 0;
+            font-weight: bold;
+            color: variables.$black;
 
+        }
+    }
     .price-tag {
         color: variables.$black;
         font-size: functions.rem(16px);
@@ -80,6 +102,22 @@
             width: functions.rem(24px);
             border-radius: 50%;
 
+        }
+        .owner-level{
+            margin-left: auto;
+            justify-content: end;
+            display: flex;
+            align-items: center;
+            p{
+                font-size: functions.rem(14px);
+                color: black;
+                font-weight: 700;
+                margin-right: 5px;
+            }
+            svg{
+                margin-right: 2px;
+            }
+            
         }
     }
 
