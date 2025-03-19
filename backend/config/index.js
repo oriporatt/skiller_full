@@ -17,4 +17,4 @@ if (process.env.NODE_ENV === 'production') {
 
 //* Uncomment the following line to use the production configuration (Mongo Atlas DB)
 config = configProd
-export const localWithAtlas=true
+export const localWithAtlas=false
