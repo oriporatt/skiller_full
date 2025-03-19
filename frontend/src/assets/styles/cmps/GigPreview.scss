@@ -32,6 +32,8 @@
        
         color: variables.$darkGray;
         font-size: functions.rem(16px);
+
+        
         &:hover{
             text-decoration: underline;
         }
