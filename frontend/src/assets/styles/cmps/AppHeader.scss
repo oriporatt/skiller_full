@@ -312,8 +312,15 @@
         }
         .user-circle{
             position: relative;
-            align-self: center;
             color:variables.$white; 
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                margin:2px 0 0 0;
+            }
         }
         &::after {
             content: '';

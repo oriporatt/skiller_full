@@ -20,7 +20,7 @@ export function MenuMobile({showMenuMobile, onCloseMenuModal}) {
             mode: 'seller'
         });
     }
-    console.log(systemMode)
+
     return (
         <div className={`menu-mobile ${showMenuMobile ? 'active' : ''}`} >  
                     <div className='top-menu'>

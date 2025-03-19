@@ -42,49 +42,53 @@ export function Signup() {
 
     return (
         <form className="signup-form" onSubmit={onSignup}>
-            <div className='input-fullname'>
-                <label htmlFor="fullname">Full Name</label>
-                <input
-                    type="text"
-                    name="fullname"
-                    value={credentials.fullname}
-                    placeholder="Fullname"
-                    onChange={handleChange}
-                    required
-                    autoComplete="off"
+            <img src='/img/sign.jpg' className='signup-img'/>
+            <div className='signup-inputs'>
+                <div className='input-fullname'>
+                    <label htmlFor="fullname">Full Name</label>
+                    <input
+                        type="text"
+                        name="fullname"
+                        value={credentials.fullname}
+                        placeholder="Fullname"
+                        onChange={handleChange}
+                        required
+                        autoComplete="off"
 
-                />
+                    />
+                </div>
+
+                <div className='input-username'>
+                    <label htmlFor="username">Username</label>
+                    <input
+                        type="text"
+                        name="username"
+                        value={credentials.username}
+                        placeholder="Username"
+                        onChange={handleChange}
+                        required
+                        autoComplete="off"
+
+                    />
+                </div>
+
+                <div className='input-password'>
+                    <label htmlFor="password">Password</label>
+                    <input
+                        type="password"
+                        name="password"
+                        value={credentials.password}
+                        placeholder="Password"
+                        onChange={handleChange}
+                        required
+                        autoComplete="new-password"
+
+                    />
+                </div>
+            
+                {/* <ImgUploader onUploaded={onUploaded} /> */}
+                <button>Signup</button>
             </div>
-
-            <div className='input-username'>
-                <label htmlFor="username">Username</label>
-                <input
-                    type="text"
-                    name="username"
-                    value={credentials.username}
-                    placeholder="Username"
-                    onChange={handleChange}
-                    required
-                    autoComplete="off"
-
-                />
-            </div>
-
-            <div className='input-password'>
-                <label htmlFor="password">Password</label>
-                <input
-                    type="password"
-                    name="password"
-                    value={credentials.password}
-                    placeholder="Password"
-                    onChange={handleChange}
-                    required
-                    autoComplete="new-password"
-
-                />
-            </div>
-            {/* <ImgUploader onUploaded={onUploaded} /> */}
-            <button>Signup</button>
         </form>
     )
 }

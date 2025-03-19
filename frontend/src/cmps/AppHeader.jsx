@@ -101,6 +101,8 @@ export function AppHeader() {
 			type: UPDATE_FILTER_BY,
 			filterBy: { 'txt': localInput }
 		});
+		navigate('/gig')
+
 	}
 	
 	function onClearSearchBox(event) {
@@ -193,9 +195,9 @@ export function AppHeader() {
 
 				<nav>
 
-					{systemMode==='buyer'&&<NavLink className='gig-link' to="gig">Explore Gigs</NavLink>}
-					{systemMode==='buyer'&&user&&<NavLink className='switch-seller' to="/seller" onClick={onSwitchToSelling}>Switch to Selling</NavLink>}
-					{systemMode==='seller'&&user&&<NavLink className='switch-buying' to="" onClick={onSwitchToBuying}>Switch to Buying</NavLink>}
+					{systemMode==='buyer'&&<NavLink className='gig-link' to="gig">Explore</NavLink>}
+					{systemMode==='buyer'&&user&&<NavLink className='switch-seller' to="/seller" onClick={onSwitchToSelling}>Switch to selling</NavLink>}
+					{systemMode==='seller'&&user&&<NavLink className='switch-buying' to="" onClick={onSwitchToBuying}>Switch to buying</NavLink>}
 					{systemMode==='buyer'&&user&&<div className='button-my-orders-div'>
 						<button className='buyer-orders' onClick={onToggleOrdersModal}>
 						My orders
@@ -214,7 +216,7 @@ export function AppHeader() {
 							{/* <Link to={`user/${user._id}`}> */}
 								<div className="user-circle"
 									>
-									{user.fullname[0]}
+									<p>{user.fullname[0]}</p>
 								</div>
 							{/* </Link> */}
 							{showLogoutBtn && (

@@ -19,9 +19,7 @@
 	width: max(80%, 300px);
 	min-width: 300px;
 	padding: 1em;
-	input {
-		width: min(80%, 300px);
-	}
+
 }
 
 .signup-form {
@@ -39,17 +37,19 @@
 }
 
 .login-page {
-	// min-width: functions.rem(100px);
-	// max-width: functions.rem(120px);
-	// aspect-ratio: 1 / 1;
+
 	font-family: "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	font-size: 1rem;
-	// border-radius:1rem ;
-	// box-shadow: 0 0 .880517px rgba(0,0,0,.029),0 0 2.29197px rgba(0,0,0,.03),0 0 5.52px rgba(0,0,0,.054),0 0 11px rgba(0,0,0,.09);  
-	display: grid;
+	// display: grid;
 	justify-items: center;
 
+	background: linear-gradient(180deg, #003912 36.72%, #19aa64 141.43%);
+
+	margin-top: 90px;
+
+	padding-bottom: 80px ;
+	border-radius: 20px;
 	button {
 		font-family: 'Macan', sans-serif; 
 		font-weight: 700;
@@ -58,6 +58,8 @@
 		background-color: variables.$white;
 		padding: 10px 20px;
 		border-radius: 5px;
+		width: min(80%, 500px);
+		margin: 0 20px;
 		&:hover{
 			background-color: variables.$clr3;
 			color: variables.$white;
@@ -72,20 +74,271 @@
 		justify-content: center;
 		gap: 2em;
 
-		margin-block: 100px 0.5em;
+		margin-block: 50px 0.5em;
 
 		a {
 			font-size: functions.rem(16px);
-			color: variables.$clr4;
+			color: variables.$lightGray;
+			text-decoration: none;
 
 			&:hover {
-				color: variables.$clr1;
+				color: variables.$lightGray;
+				text-decoration: underline;
+
 			}
 		}
 		a.active {
-			text-decoration: underline;
-			color: variables.$clr2;
+			color: variables.$white;
+			font-size: functions.rem(20px);
+
 			
 		}
 	}
 }
+
+
+
+
+.login-img {
+    border-radius: 20px;
+    margin: 0;
+    box-shadow: 0 0 .880517px rgba(0,0,0,.029),0 0 2.29197px rgba(0,0,0,.03),0 0 5.52px rgba(0,0,0,.054),0 0 11px rgba(0,0,0,.09);  
+	align-self: center;
+}
+
+
+// login form styling
+
+.login-form{
+    display: grid;
+	justify-content: center;
+    background-color: variables.$white;
+	.login-inputs{
+		width: 100%;
+		gap: functions.rem(30px);
+		input{
+			height: 60px;
+			width: min(80%, 500px);
+			border: 1px solid variables.$lightGray;
+			border-radius: 10px;
+			padding-left: 1rem;
+			font-size: functions.rem(18px);
+		}
+		label{
+			font-family: 'Macan', sans-serif; 
+			font-weight: 700;
+			color: variables.$gray;
+		}
+		.input-username {
+			display: flex;
+			flex-direction: column;
+			justify-content: center; 
+			align-items: start;
+			height: 100%; 
+			width: 100%;
+			margin: 0 20px;
+			label{
+				align-self: start;
+				padding-left: 0;
+			}
+		}
+		.input-password {
+			display: flex;
+			flex-direction: column;
+			justify-content: center; 
+			align-items: start;
+			height: 100%; 
+			width: 100%;
+			margin: 0 20px;
+			label{
+				align-self: start;
+				padding-left: 0;
+			}
+		}
+	}
+
+
+	@include mixins.for-mobile-layout{
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: row;
+        .login-inputs{
+            grid-row: 2;
+            display: grid;
+        }
+        .login-img{
+            grid-row: 1;
+			margin-bottom: 1rem;
+
+        }
+    }
+
+	@include mixins.for-narrow-layout{
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: row;
+        .login-inputs{
+            grid-row: 2;
+            display: grid;
+        }
+        .login-img{
+            grid-row: 1;
+			margin-bottom: 1rem;
+
+        }
+    }
+    
+    @include mixins.for-normal-layout{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: column;
+        .login-inputs{
+            grid-column: 1;
+            display: grid;
+        }
+        .login-img{
+            grid-column: 2;
+        }
+    }
+
+    @include mixins.for-wide-layout{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: column;
+        .login-inputs{
+            grid-column: 1;
+			display: grid;
+
+        }
+        .login-img{
+            grid-column: 2;
+        }
+        
+    }
+
+}
+
+
+// sign up form styling
+
+.signup-img {
+    border-radius: 20px;
+    margin: 0;
+    box-shadow: 0 0 .880517px rgba(0,0,0,.029),0 0 2.29197px rgba(0,0,0,.03),0 0 5.52px rgba(0,0,0,.054),0 0 11px rgba(0,0,0,.09);  
+	align-self: center;
+}
+.signup-form{
+    display: grid;
+	justify-content: center;
+    background-color: variables.$white;
+	.signup-inputs{
+		width: 100%;
+		gap: functions.rem(30px);
+		input{
+			height: 60px;
+			width: min(80%, 500px);
+			border: 1px solid variables.$lightGray;
+			border-radius: 10px;
+			padding-left: 1rem;
+			font-size: functions.rem(18px);
+		}
+		label{
+			font-family: 'Macan', sans-serif; 
+			font-weight: 700;
+			color: variables.$gray;
+		}
+		.input-username {
+			display: flex;
+			flex-direction: column;
+			justify-content: center; 
+			align-items: start;
+			height: 100%; 
+			width: 100%;
+			margin: 0 20px;
+			label{
+				align-self: start;
+				padding-left: 0;
+			}
+		}
+		.input-password {
+			display: flex;
+			flex-direction: column;
+			justify-content: center; 
+			align-items: start;
+			height: 100%; 
+			width: 100%;
+			margin: 0 20px;
+			label{
+				align-self: start;
+				padding-left: 0;
+			}
+		}
+		.input-fullname{
+			display: flex;
+			flex-direction: column;
+			justify-content: center; 
+			align-items: start;
+			height: 100%; 
+			width: 100%;
+			margin: 0 20px;
+			label{
+				align-self: start;
+				padding-left: 0;
+			}	
+		}
+	}
+
+
+	@include mixins.for-mobile-layout{
+        grid-template-rows: auto 1fr;
+        grid-auto-flow: row;
+        .signup-inputs{
+            grid-row: 2;
+            display: grid;
+        }
+        .signup-img{
+            grid-row: 1;
+			margin-bottom: 1rem;
+        }
+    }
+
+	@include mixins.for-narrow-layout{
+        grid-template-rows: auto 1fr;
+        grid-auto-flow: row;
+        .signup-inputs{
+            grid-row: 2;
+            display: grid;
+        }
+        .signup-img{
+            grid-row: 1;
+			margin-bottom: 1rem;
+
+        }
+    }
+    
+    @include mixins.for-normal-layout{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: column;
+        .signup-inputs{
+            grid-column: 1;
+            display: grid;
+        }
+        .signup-img{
+            grid-column: 2;
+        }
+    }
+
+    @include mixins.for-wide-layout{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: column;
+        .signup-inputs{
+            grid-column: 1;
+			display: grid;
+
+        }
+        .signup-img{
+            grid-column: 2;
+        }
+        
+    }
+
+}
+
+
+
