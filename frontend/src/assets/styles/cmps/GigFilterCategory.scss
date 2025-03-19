@@ -81,7 +81,12 @@
 .filter-categories-modal {
     overflow-x: auto; 
     white-space: nowrap;
-    max-width: 100%; 
+    @include mixins.for-mobile-layout{
+        max-width: 100%; 
+    }
+    @include mixins.for-narrow-layout{
+        max-width: 100%; 
+    }
 }
 .gig-filter-category{
     overflow-x: auto;
@@ -91,5 +96,10 @@
 
 .bottom-buttons{
     overflow-x: auto;
-    max-width: 100%; 
+    @include mixins.for-mobile-layout{
+        max-width: 100%; 
+    }
+    @include mixins.for-narrow-layout{
+        max-width: 100%; 
+    }
 }

@@ -275,10 +275,10 @@ export function GigFilter({ filterBy, onSetFilterBy,
             </div>
 
 
-            <button 
+            {/* <button 
                 className="btn-clear" 
                 onClick={resetFilter}>Reset Filter
-            </button>
+            </button> */}
 
 
 
