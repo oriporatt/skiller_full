@@ -68,7 +68,6 @@ export function GigPreviewCarrousel({ images,gigId=undefined }) { //images is th
             onClick={gigId ? () => navigateToGig(gigId) : undefined}  
             key={idx} src={img} alt={`Image ${idx + 1}`} 
             className="carousel-image" />
-          // <img key={idx} src={img} alt={`Image ${idx + 1}`} className="carousel-image" />
         ))}
       </div>
       
@@ -86,7 +85,7 @@ export function GigPreviewCarrousel({ images,gigId=undefined }) { //images is th
       </div>
 
       {/* <button className="carousel-button left" onClick={goToPrevious}>{'<'}</button> */}
-      <button className="carousel-button left" onClick={goToPrevious}><LeftArrow/></button>
+      <button className="carousel-button left" onClick={goToPrevious}><LeftArrow className="left-svg"/></button>
       <button className="carousel-button right" onClick={goToNext}><RightArrow/></button>
     </div>
   );
