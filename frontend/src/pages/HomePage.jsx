@@ -20,6 +20,9 @@ import HomeTime from '../assets/svgs/homeTime.svg?react'
 import HomeQuality from '../assets/svgs/homeQuality.svg?react'
 import HomePay from '../assets/svgs/homePay.svg?react'
 
+import LeftArrow from '../assets/svgs/leftArrow.svg?react'
+import RightArrow from '../assets/svgs/rightArrow.svg?react'
+
 
 
 export function HomePage() {
@@ -228,10 +231,10 @@ export function HomePage() {
             <div className="home-main-categories">
             
                 {leftScrollButton&&<button className="scroll-button left" onClick={scrollLeft} >
-                    {"<"}
+                    <LeftArrow/>
                 </button>}
                 <button className="scroll-button right" onClick={scrollRight} >
-                    {">"}
+                    <RightArrow/>
                 </button>
                 <ul className="main-categories-list" ref={listRef} >
                     <li onClick={()=>onClickCategory('Programming & Tech')}>

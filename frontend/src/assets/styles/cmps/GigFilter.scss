@@ -2,13 +2,7 @@
 @use "../setup/variables";
 @use "../setup/mixins";
 
-.filter-buttons{
-    display: flex;
-    gap:10px;
-    .filter-button-template{
 
-    }
-}
 
 .gig-filter{
     display: flex;
@@ -174,7 +168,7 @@
     border-top: 1px solid #e0e0e0; 
     padding: functions.rem(16px) functions.rem(24px);
     justify-content: space-between;
-    width: 100;
+    width: 100px;
     padding: 0.5rem;
     border: 1px solid #e4e5e7;
     border-radius: 0 0 15px 15px ;
@@ -237,5 +231,47 @@
     svg{
         transform: scale(0.8); 
           transform-origin: center;
+    }
+}
+
+.filter-buttons{
+    display: flex;
+    gap:10px;
+
+
+}
+
+
+@include mixins.for-mobile-layout{
+    .filter-buttons{
+            flex-direction: column;
+    }
+    .gig-filter{
+        width: 90%;
+
+    }
+    .bottom-menu{
+        width: 80%;
+    }
+    .btn-design{
+        width: 80%;
+
+    }
+}
+
+@include mixins.for-narrow-layout{
+    .filter-buttons{
+        flex-direction: column;
+    }
+    .gig-filter{
+        width: 90%;
+
+    }
+    .bottom-menu{
+        width: 80%;
+    }
+    .btn-design{
+        width: 80%;
+
     }
 }

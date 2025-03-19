@@ -13,6 +13,7 @@
 
     @include mixins.for-mobile-layout{
         grid-template-columns: repeat(1, minmax(var(--min-column-size), 1fr));
+
     }
     @include mixins.for-narrow-layout{
         grid-template-columns: repeat(2, minmax(var(--min-column-size), 1fr));
