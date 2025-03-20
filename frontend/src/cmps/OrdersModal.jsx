@@ -16,12 +16,17 @@ import { loadOrders } from '../store/actions/order.actions'
 import { orderService } from '../services/order'
 import { StatusModal } from '../cmps/StatusModal'
 import { updateOrder } from '../store/actions/order.actions'
+import { MyOrdersList } from './MyOrdersList'
+
 
 export function OrdersModal({onCloseMyOrders}) {
     const dispatch = useDispatch()
     const orders =useSelector(storeState => storeState.orderModule.orders)
     const users =useSelector(storeState => storeState.userModule.users)
     const user =useSelector(storeState => storeState.userModule.user)
+    const markOrder =useSelector(storeState => storeState.systemModule.markOrder)
+
+    
 
     let myOrders;
     if (users && user && orders){
@@ -67,7 +72,9 @@ export function OrdersModal({onCloseMyOrders}) {
         return url
     }
 
-
+    function onSubmitStatus(){
+        console.log('submitted')
+    }
 
     useEffect(() => {
         loadOrders(orderService.getDefaultFilter())
@@ -76,37 +83,9 @@ export function OrdersModal({onCloseMyOrders}) {
     return (
         <main className="orders-modal">  
             <div className='orders-modal-div'>
-                <table className='gig-order-table-modal'>
-                    <thead>
-                        <tr>
-                            <th>Creator</th>
-                            <th>GIG</th>
-                            <th>ORDER AT</th>
-                            <th>STATUS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {myOrders.map((thisOrder,row) => (
-                            <tr key={thisOrder._id} className='this-row'>
-                                <td>
-                                    <div className='client-element'>
-                                        <img  src={thisOrder.providerUrl}/>
-                                        <h4>{thisOrder.providerFullname}</h4>
-                                    </div>
-                                </td>
-                                <td>{thisOrder.gigTitle}</td>
-                                <td className='order-at'>{thisOrder.createdAtFormatted}</td>
-                                <td className='gig-status'>
-                                    {thisOrder.status==="pending"&&<span className='pending'>Pending</span>}                                    
-                                    {thisOrder.status==="approved"&&<span className='approved'>Approved</span>}                                    
-                                    {thisOrder.status==="in-progress"&&<span className='in-progress'>In Progress</span>}                                    
-                                    {thisOrder.status==="completed"&&<span className='completed'>Completed</span>}                                    
-                                    {thisOrder.status==="rejected"&&<span className='rejected'>Rejected</span>}                                    
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+                <MyOrdersList className='my-orders-list' myOrders={myOrders} 
+                                markRow={markOrder}/>
+         
                 <button className='close-modal-btn' onClick={()=>onCloseMyOrders()}>Close</button>
             </div>
         </main>

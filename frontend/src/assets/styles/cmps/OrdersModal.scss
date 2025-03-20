@@ -10,26 +10,28 @@
     max-height: 500px;
     background-color: variables.$white;
     z-index: 120;
-
-
+    width: min(700px, 90vw);
+    display: flex;
 
 }
 .orders-modal-div{
-    display: grid;
-    grid-template-rows: auto auto;
     margin: 0;
     border-radius: 8px;
     background-color: variables.$white;
-    min-width: 500px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     align-items: center;
-    overflow-y: auto; // Enables vertical scrolling if content overflows
-    max-height: 400px;
+    display: grid;
+    .my-orders-list{
+        grid-row: 1;
+        max-height: 400px;
+        overflow-y: auto; // Enables vertical scrolling if content overflows
+
+    }
+
     .close-modal-btn{
         grid-row: 2;
         color: variables.$black;
         height: functions.rem(30px);
-        min-width: functions.rem(120px);
         background-color: variables.$white;
         font-size: functions.rem(12px);
         font-weight: 700;
@@ -43,74 +45,32 @@
         &:hover{
             background-color: variables.$black ;
             color: variables.$white;
-
         }    
     }
+
     
 }
 
-.gig-order-table-modal{
-    grid-row: 1;
-    background-color: variables.$white;
-    border: 1px solid variables.$lightGray;
-    box-shadow: 0 0 .880517px rgba(0,0,0,.029),0 0 2.29197px rgba(0,0,0,.03),0 0 5.52px rgba(0,0,0,.054),0 0 11px rgba(0,0,0,.09);  
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 5px;
-
-    .gig-status{
-        cursor:inherit;
-    }
-    
-    thead {
-        border: 1px solid variables.$lightGray;
-        position: sticky;
-        top:-1px;
-        background: white;
 
 
-    }
-    th, td {
-        padding: 8px;
-        text-align: center;
-        word-wrap: break-word; 
-        overflow: hidden;
-    }
-    th {
-        padding: 8px;
-        text-align: center;
-        font-size: functions.rem(14px); 
-        font-weight: 400 ;
-        color: variables.$black;;
+@include mixins.for-mobile-layout {
+    .orders-modal{
 
-    }
-    tr{
-        border-bottom: 1px solid variables.$lightGray;
-    }
-    td {
-        padding: 8px;
-        color: variables.$black;
-        font-size: functions.rem(14px); ;
-
-        .client-element{
-            display: flex;
-            align-items: center;
-            gap:8px;
-            width: 100%;
-            justify-content: flex-start;
-            img{
-                border-radius: 50%;
-                height: functions.rem(35px); 
-                width: functions.rem(35px); 
-            }
-            h4{
-                margin: 0;
-                line-height: functions.rem(20px);
-                font-size: functions.rem(14px);
-            }
-        }
+        position: fixed;
+        top: functions.rem(70px);
+        width: (90vw);
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
+@include mixins.for-narrow-layout {
+    .orders-modal{
 
-
+        position: fixed;
+        top: functions.rem(70px);
+        width: (90vw);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

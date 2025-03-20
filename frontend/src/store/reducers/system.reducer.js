@@ -4,6 +4,7 @@ export const SET_SEARCH_BOX_POS = 'SET_SEARCH_BOX_POS'
 export const SET_SYSTEM_MODE = 'SET_SYSTEM_MODE'
 export const SET_SHOW_MENU_MOBILE='SET_SHOW_MENU_MOBILE'
 export const SET_SHOW_ORDER_MOBILE='SET_SHOW_ORDER_MOBILE'
+export const SET_MARK_NEW_ORDER='SET_MARK_NEW_ORDER'
 
 
 
@@ -15,6 +16,7 @@ const initialState = {
   mode: 'buyer',
   showMenuMobile: false,
   showOrdersModal: false,
+  markOrder:undefined
 }
 
 export function systemReducer (state = initialState, action = {}) {
@@ -31,6 +33,8 @@ export function systemReducer (state = initialState, action = {}) {
       return { ...state, showMenuMobile: action.showMenuMobile }
     case SET_SHOW_ORDER_MOBILE:
       return { ...state, showOrdersModal: action.showOrdersModal }
+    case SET_MARK_NEW_ORDER:
+      return { ...state, markOrder: action.markOrder }
     default: return state
   }
 }

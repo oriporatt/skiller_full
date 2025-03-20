@@ -201,15 +201,15 @@ export function AppHeader() {
                 </form>}
 
 				<nav>
-
+				
 					{systemMode==='buyer'&&<NavLink className='gig-link' to="gig">Explore</NavLink>}
 					{systemMode==='buyer'&&user&&<NavLink className='switch-seller' to="/seller" onClick={onSwitchToSelling}>Switch to selling</NavLink>}
 					{systemMode==='seller'&&user&&<NavLink className='switch-buying' to="" onClick={onSwitchToBuying}>Switch to buying</NavLink>}
 					{systemMode==='buyer'&&user&&<div className='button-my-orders-div'>
-						<button className='buyer-orders' onClick={onToggleOrdersModal}>
+						<button className={`buyer-orders ${showOrdersModal ? "active" : ""}`}  onClick={onToggleOrdersModal}>
 						My orders
 						</button>						
-						{showOrdersModal&&<OrdersModal onCloseMyOrders={onCloseMyOrders}/>}
+						{showOrdersModal&&<OrdersModal  onCloseMyOrders={onCloseMyOrders}/>}
 					</div>}
 						
 

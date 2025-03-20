@@ -17,7 +17,7 @@ import { userService } from '../services/user';
 import { addOrder } from '../store/actions/order.actions';
 import { showOrderMsg } from '../services/event-bus.service';
 import Toastify from 'toastify-js';
-import { SET_SHOW_ORDER_MOBILE } from '../store/reducers/system.reducer';
+import { SET_SHOW_ORDER_MOBILE,SET_MARK_NEW_ORDER } from '../store/reducers/system.reducer';
 
 export function GigDetails() {
 
@@ -141,8 +141,18 @@ export function GigDetails() {
       type: SET_SHOW_ORDER_MOBILE,
       showOrdersModal: true
     });
+
+    dispatch({
+      type: SET_MARK_NEW_ORDER,
+      markOrder: savedOrder._id
+    });
     forceScrollToTop()
-      
+    setTimeout(() => {
+      dispatch({
+        type: SET_MARK_NEW_ORDER,
+        markOrder: undefined
+      });
+    }, 10000);
   }
 
   function forceScrollToTop() {

@@ -1,0 +1,132 @@
+@use "../setup/functions";
+@use "../setup/mixins";
+@use "../setup/variables";
+
+
+
+.my-order-table{
+    display: grid;
+    grid-template-rows: repeat(auto-fill,1fr);
+
+    .table-header{
+        border-top: 1px solid variables.$lightGray;
+        h4{
+            margin: 0;
+            font-weight: 700;
+        }
+        .seller-col{
+            justify-self: center
+        }
+    }
+    li article{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1.5fr 1fr;
+        border-bottom: 1px solid variables.$lightGray;
+        font-size: functions.rem(14px);
+        align-items: center;
+        gap:10px;
+        padding-left: 1rem;
+        padding-top: functions.rem(8px);
+        padding-bottom: functions.rem(8px);
+        font-weight: 400;
+        p{
+            margin: 0;
+        }
+        span{
+            text-align: center;
+        }
+        .pending{
+            background-color: lightblue;
+        }
+        .approved{
+            background-color: rgb(93, 128, 255);
+            color: white;
+        }
+        .in-progress{
+            background-color: rgb(255, 231, 110);
+        }
+        .completed{
+            background-color: variables.$green;
+            color: white;
+
+        }
+        .rejected{
+            background-color: rgb(227, 82, 82);
+            color: white;
+
+        }
+    
+
+
+    }
+    .gig-title{
+        font-weight: 700;
+    }
+
+    .client-element{
+        display: flex;
+        align-items: center;
+        gap:8px;
+        width: 100%;
+        justify-content: flex-start;
+        img{
+            border-radius: 50%;
+            height: functions.rem(35px); 
+            width: functions.rem(35px); 
+        }
+        h4{
+            margin: 0;
+            line-height: functions.rem(20px);
+            font-size: functions.rem(14px);
+            font-weight: 400;
+        }
+    }
+
+}
+
+.my-order-preview{
+    &.mark{
+        background-color: rgb(223, 218, 171);
+    }
+}
+
+
+@include mixins.for-mobile-layout {
+    .my-orders-list{
+
+        .my-order-table{
+            gap:1rem;
+            .table-header{
+                display: none;
+            }
+            li article{
+                grid-template-columns: none;
+                display: grid;
+                grid-auto-flow: row;
+                grid-template-rows:repeat(6,auto);
+                border-bottom: 1px solid variables.$lightGray;
+                font-size: functions.rem(14px);
+                align-items: center;
+                gap:5px;
+                box-shadow: 0 0 .880517px rgba(0,0,0,.029),0 0 2.29197px rgba(0,0,0,.03),0 0 5.52px rgba(0,0,0,.054),0 0 11px rgba(0,0,0,.09);  
+                padding: 1rem;
+                box-shadow: 0 0 .880517px rgba(0,0,0,.029),0 0 2.29197px rgba(0,0,0,.03),0 0 5.52px rgba(0,0,0,.054),0 0 11px rgba(0,0,0,.09);  
+                border-radius: functions.rem(8px);
+                margin: functions.rem(8px);
+                justify-items: center;
+                .client-element{
+                    justify-content: center;
+                }
+                p{
+                    text-align: center;
+                }
+                .order-at{
+                    font-size: functions.rem(12px);
+                    text-align: center;
+                }
+            }
+
+        }
+
+    }
+}
