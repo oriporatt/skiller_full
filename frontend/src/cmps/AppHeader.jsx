@@ -14,7 +14,7 @@ import { loadOrders } from '../store/actions/order.actions'
 import { orderService } from '../services/order'
 import { OrdersModal } from './OrdersModal'
 import { SET_SHOW_MENU_MOBILE } from '../store/reducers/system.reducer'
-
+import { SET_SHOW_ORDER_MOBILE } from '../store/reducers/system.reducer'
 
 
 export function AppHeader() {
@@ -23,13 +23,14 @@ export function AppHeader() {
 	const dispatch = useDispatch()
 	const searchBoxTextGlobal = useSelector(storeState => storeState.gigModule.filterBy.txt)
 	const systemMode = useSelector(storeState => storeState.systemModule.mode)
+	const showOrdersModal = useSelector(storeState => storeState.systemModule.showOrdersModal)
+
 	const [ showX, setShowX ] = useState(false)
 	const [ localInput, setLocalInput ] = useState(searchBoxTextGlobal)
 	const [ showLogoutBtn, setShowLogoutBtn ] = useState(false)
 	const button1Ref = useRef(null);
     const button2Ref = useRef(null);
 	const buttonCloseModalRef = useRef(null);
-	const [ showOrdersModal, setShowOrdersModal ] = useState(false)
 
 
 
@@ -159,11 +160,17 @@ export function AppHeader() {
 
 
 	function onCloseMyOrders(){
-		setShowOrdersModal(false)
+		dispatch({
+			type: SET_SHOW_ORDER_MOBILE,
+			showOrdersModal: false
+		});
 	}
 	
 	function onToggleOrdersModal(){
-		setShowOrdersModal(lastState=>!lastState)
+		dispatch({
+			type: SET_SHOW_ORDER_MOBILE,
+			showOrdersModal: !showOrdersModal,
+		});
 	}
 
 	return (

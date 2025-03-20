@@ -3,13 +3,18 @@ export const LOADING_DONE = 'LOADING_DONE'
 export const SET_SEARCH_BOX_POS = 'SET_SEARCH_BOX_POS'
 export const SET_SYSTEM_MODE = 'SET_SYSTEM_MODE'
 export const SET_SHOW_MENU_MOBILE='SET_SHOW_MENU_MOBILE'
+export const SET_SHOW_ORDER_MOBILE='SET_SHOW_ORDER_MOBILE'
+
+
+
 
 
 const initialState = {
   isLoading: false,
   searchBoxPosition: 'bottom',
   mode: 'buyer',
-  showMenuMobile: false
+  showMenuMobile: false,
+  showOrdersModal: false,
 }
 
 export function systemReducer (state = initialState, action = {}) {
@@ -24,6 +29,8 @@ export function systemReducer (state = initialState, action = {}) {
       return { ...state, mode: action.mode }
     case SET_SHOW_MENU_MOBILE:
       return { ...state, showMenuMobile: action.showMenuMobile }
+    case SET_SHOW_ORDER_MOBILE:
+      return { ...state, showOrdersModal: action.showOrdersModal }
     default: return state
   }
 }

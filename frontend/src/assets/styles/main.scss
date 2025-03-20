@@ -10,6 +10,7 @@
 @use "basics/base";
 // @import "basics/links";
 @use "basics/forms";
+@use "cmps/Toastify";
 
 
 // pages
@@ -27,6 +28,7 @@
 @use "pages/Signup";
 
 // Components
+
 @use "cmps/GigList";
 @use "cmps/GigPreview";
 @use "cmps/AppHeader";

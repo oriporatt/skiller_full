@@ -1,10 +1,7 @@
 import React from 'react';
 import { useEffect,useState } from 'react'
 import { useParams,NavLink } from 'react-router-dom'
-import { useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
-import { gigService } from '../services/gig'
-import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service'
+import { useSelector , useDispatch} from 'react-redux'
 import { loadGig } from '../store/actions/gig.actions'
 import Home from '../assets/svgs/home.svg?react'
 import BlackStar from '../assets/svgs/blackStar.svg?react'
@@ -14,18 +11,23 @@ import { GigPreviewCarrousel } from '../cmps/GigPreviewCarrousel'
 import OrderArrow from '../assets/svgs/orderArrow.svg?react'
 import OrderDeliveryTime from '../assets/svgs/orderDeliveryTime.svg?react'
 import OrderRevisions from '../assets/svgs/orderRevisions.svg?react'
+import OrderPackageV from '../assets/svgs/orderPackageV.svg?react'
+
 import { userService } from '../services/user';
 import { addOrder } from '../store/actions/order.actions';
 import { showOrderMsg } from '../services/event-bus.service';
 import Toastify from 'toastify-js';
-
+import { SET_SHOW_ORDER_MOBILE } from '../store/reducers/system.reducer';
 
 export function GigDetails() {
 
+  const dispatch = useDispatch()
 
 
   const {gigId} = useParams()
   const gig = useSelector(storeState => storeState.gigModule.gig)
+  const showOrdersModal = useSelector(storeState => storeState.systemModule.showOrdersModal)
+
   const [orderPackage, setOrderPackage] = useState('Basic')
 
   const [order,setOrder]=useState(null)
@@ -123,18 +125,34 @@ export function GigDetails() {
 
   async function onSubmitOrder(){
     const savedOrder=await addOrder(order)
-    showOrderMsg('Order Submitted Successfully!')
+    await Toastify({
+      text: "Order received successfully",
+      className: "toast-order",
+      gravity: "top", // `top` or `bottom`
+      position: "right", // `left`, `center` or `right`
+      offset: {
+        x: 70, 
+        y: 70 
+      },
+      duration: 1500
+    }).showToast();
+    
+    dispatch({
+      type: SET_SHOW_ORDER_MOBILE,
+      showOrdersModal: true
+    });
+    forceScrollToTop()
+      
   }
 
-  function showToast(){
-    Toastify({
-      text: "Order completed",
-      className: "toast-test",
-      gravity: "bottom", // `top` or `bottom`
-      position: "right", // `left`, `center` or `right`
-      duration: 2000
-      }).showToast();
+  function forceScrollToTop() {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0; 
   }
+
+
+
+
 
   if (!gig || gig._id!==gigId) return <p>Loading...</p> //when loading or swtichng gig
 
@@ -183,8 +201,23 @@ export function GigDetails() {
                 <OrderDeliveryTime/><span>{deliveryTimePackage}-day delivery</span>
                 <OrderRevisions/><span>3 Revisions</span>
               </div>
+              <ul className='v-list'>
+
+                <li>
+                  <OrderPackageV/>
+                  <p>Short response time</p>
+                </li>
+                <li>
+                  <OrderPackageV/>
+                  <p>New origin content</p>
+                </li>
+                <li>
+                  <OrderPackageV/>
+                  <p>Guidance included</p>
+                </li>
+              </ul>
               <button onClick={onSubmitOrder}>
-                <span>Order</span>
+                <span >Order</span>
                 <OrderArrow/>
               </button>
             </div>
@@ -263,10 +296,7 @@ export function GigDetails() {
 
       </div>
 
-      <button onClick={showToast} className='btn-close'>
-        <div className='toast-test'></div>
-        Show Toast
-      </button>
+
 
      
 
