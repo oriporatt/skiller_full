@@ -36,14 +36,14 @@
             text-align: center;
         }
         .pending{
-            background-color: lightblue;
+            background-color: variables.$lightGray ;
         }
         .approved{
-            background-color: rgb(93, 128, 255);
+            background-color: rgb(116, 164, 242) ;
             color: white;
         }
         .in-progress{
-            background-color: rgb(255, 231, 110);
+            background-color: rgb(248, 212, 122);
         }
         .completed{
             background-color: variables.$green;
@@ -51,9 +51,8 @@
 
         }
         .rejected{
-            background-color: rgb(227, 82, 82);
+            background-color: variables.$gray;
             color: white;
-
         }
     
 

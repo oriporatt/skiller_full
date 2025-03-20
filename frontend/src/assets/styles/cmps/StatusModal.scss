@@ -41,21 +41,21 @@
             justify-content: space-between;
             align-items: center;
             border-radius: 4px;
-            border: 1px solid variables.$black ;
+            // border: 1px solid variables.$black ;
             &:hover{
                 background-color: variables.$gray ;
             }
 
         }
         .pending{
-            background-color: lightblue;
+            background-color: variables.$lightGray ;
         }
         .approved{
-            background-color: rgb(93, 128, 255);
+            background-color: rgb(116, 164, 242) ;
             color: white;
         }
         .in-progress{
-            background-color: rgb(255, 231, 110);
+            background-color: rgb(248, 212, 122);
         }
         .completed{
             background-color: variables.$green;
@@ -63,7 +63,7 @@
 
         }
         .rejected{
-            background-color: rgb(227, 82, 82);
+            background-color: variables.$gray;
             color: white;
 
         }
@@ -86,17 +86,19 @@
 }
 
 .menu-btn{
-    color: variables.$white;
+    color: variables.$black;
     height: functions.rem(24px);
-    background-color: variables.$black;
+    background-color: variables.$white;
     font-size: functions.rem(12px);
     line-height: 100%;
-    font-weight: 600;
+    font-weight: 700;
     justify-content: space-between;
     align-items: center;
     border-radius: 4px;
     border: 1px solid variables.$black ;
     &:hover{
         background-color: variables.$gray ;
+        color: variables.$white;
+
     }
 }

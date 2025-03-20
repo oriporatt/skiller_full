@@ -7,7 +7,7 @@
 .gig-order-table{
     display: grid;
     grid-template-rows: repeat(auto,1fr);
-    margin-bottom: 300px;
+    margin-bottom: 50px;
     .table-header{
         border-top: 1px solid variables.$lightGray;
         h4{

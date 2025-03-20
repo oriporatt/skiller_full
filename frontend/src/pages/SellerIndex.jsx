@@ -12,7 +12,8 @@ import Location from '../assets/svgs/location.svg?react'
 import Member from '../assets/svgs/member.svg?react'
 import Fullname from '../assets/svgs/fullname.svg?react'
 import ResponseTime from '../assets/svgs/responseTime.svg?react'
-import ThreeDots from '../assets/svgs/threeDots.svg?react'
+import StatCart from '../assets/svgs/statCart.svg?react'
+
 import Income from '../assets/svgs/income.svg?react'
 import Clients from '../assets/svgs/clients.svg?react'
 
@@ -100,6 +101,7 @@ export function SellerIndex() {
 
         statsObj.totalOrderValue = sellerOrders
             .filter(order => order.status !== 'rejected') 
+            .filter(order => order.status !== 'pending') 
             .reduce((sum, order) => sum + order.total, 0);
         statsObj.clients =getUniqueClientFullnames(sellerOrders
             .filter(order => order.status !== 'rejected') 
@@ -141,68 +143,69 @@ export function SellerIndex() {
 
     return (
         <main className="seller-index">  
-            <div className='seller-profile'>
-                
-                <div className='top-details'>
-                    <div className='img-container'>
-                        <img  src={seller.imageUrl}/>
-                        {seller.level==='premium'&& <div className='premium'>
-                            <RatePremium />
-                            <h5>Premium member</h5>
-                        </div>}
+            <div className='seller-side'>
+                <h3>My Profile</h3>
+                <div className='seller-profile'>
+                    <div className='top-details'>
+                        <div className='img-container'>
+                            <img  src={seller.imageUrl}/>
+                            {seller.level==='premium'&& <div className='premium'>
+                                <RatePremium />
+                                <h5>Premium member</h5>
+                            </div>}
+                        </div>
+                        <div className='rate'>
+                            {Array.from({ length: rateInt}, (_, index) => (
+                                <BlackStar key={index} />
+                            ))}
+                            <p>{seller.rate}</p>
+                        </div>
                     </div>
-                    <div className='rate'>
-                        {Array.from({ length: rateInt}, (_, index) => (
-                            <BlackStar key={index} />
-                        ))}
-                        <p>{seller.rate}</p>
-                    </div>
+
+                    <ul className='buttom-details'>
+
+                        <li className='name-line'>
+                            <Fullname/>
+                            <h6>Full Name</h6>
+                            <h6 className='data-bold'>{seller.fullname}</h6>
+                        </li>
+                        <li className='from-line'>
+                            <Location/>
+                            <h6>From</h6>
+                            <h6 className='data-bold'>{seller.from}</h6>
+                        </li>
+                        <li className='member-since'>
+                            <Member/>
+                            <h6>Member Since</h6>
+                            <h6 className='data-bold'>{seller.memberSince}</h6>
+                        </li>
+
+                        <li className='response-line'>
+                            <ResponseTime/>
+                            <h6>Avg. Response Time</h6>
+                            <h6 className='data-bold'>{seller.avgResponseTime} min.</h6>
+                        </li>
+
+                    </ul>
                 </div>
 
-                <ul className='buttom-details'>
-
-                    <li className='name-line'>
-                        <Fullname/>
-                        <h6>Full Name</h6>
-                        <h6 className='data-bold'>{seller.fullname}</h6>
-                    </li>
-                    <li className='from-line'>
-                        <Location/>
-                        <h6>From</h6>
-                        <h6 className='data-bold'>{seller.from}</h6>
-                    </li>
-                    <li className='member-since'>
-                        <Member/>
-                        <h6>Member Since</h6>
-                        <h6 className='data-bold'>{seller.memberSince}</h6>
-                    </li>
-
-                    <li className='response-line'>
-                        <ResponseTime/>
-                        <h6>Avg. Response Time</h6>
-                        <h6 className='data-bold'>{seller.avgResponseTime} min.</h6>
-                    </li>
-
-                </ul>
             </div>
+            
             
             
             <div className='stats-and-orders'>
 
             
                 {statsObj&&<div className='stats'>
-                    <h3>Your Stats</h3>
+                    <h3>Seller Stats</h3>
                     <ul className='stats-list'>
                         <li className='total-by-status'>
                             <div className='totals'>
                                 <h4>Total Orders</h4>
                                 <h5>{statsObj.totalOrders}</h5>
+                                <StatCart/>
                             </div>
-                            {statsObj.pending>0&&<h6 className='pending-stats'>{statsObj.pending} <span > Pending</span></h6>}
-                            {statsObj.approved>0&&<h6 className='approved-stats'>{statsObj.approved} <span> Approved</span></h6>}
-                            {statsObj.inProgress>0&&<h6 className='in-progress-stats'>{statsObj.inProgress} <span> In-Progress</span></h6>}
-                            {statsObj.rejectedOrders>0&&<h6 className='rejected-stats'>{statsObj.rejectedOrders} <span> Rejected</span></h6>}
-                            {statsObj.completedOrders>0&&<h6 className='completed-stats'>{statsObj.completedOrders} <span> Completed</span></h6>}
+
 
                         </li>
                         <li className='total-by-amount'>
@@ -213,7 +216,7 @@ export function SellerIndex() {
                             </div>
                         </li>
                         <li className='total-by-clients'>
-                            <div className='total-amount'>
+                            <div className='total-client'>
                                 <h4>Clients</h4>
                                 <h5>{statsObj.clients}</h5>
                                 <Clients/>
@@ -222,6 +225,13 @@ export function SellerIndex() {
                     </ul>
 
                 </div>}
+
+                {/* {statsObj.pending>0&&<h6 className='pending-stats'>{statsObj.pending} <span > Pending</span></h6>}
+                {statsObj.approved>0&&<h6 className='approved-stats'>{statsObj.approved} <span> Approved</span></h6>}
+                {statsObj.inProgress>0&&<h6 className='in-progress-stats'>{statsObj.inProgress} <span> In-Progress</span></h6>}
+                {statsObj.rejectedOrders>0&&<h6 className='rejected-stats'>{statsObj.rejectedOrders} <span> Rejected</span></h6>}
+                {statsObj.completedOrders>0&&<h6 className='completed-stats'>{statsObj.completedOrders} <span> Completed</span></h6>} */}
+
 
                 <div className='manage-orders'>
                     <h3>Manage Orders</h3>
