@@ -38,9 +38,19 @@ async function update({ _id, score }) {
 	return user
 }
 
+// async function login(userCred) {
+// 	const user = await httpService.post('auth/login', userCred)
+// 	if (user) return saveLoggedinUser(user)
+// }
+
 async function login(userCred) {
-	const user = await httpService.post('auth/login', userCred)
-	if (user) return saveLoggedinUser(user)
+    try {
+        const user = await httpService.post('auth/login', userCred)
+        if (user) return saveLoggedinUser(user)
+    } catch (err) {
+        console.error('Login failed:',err)
+        throw err
+    }
 }
 
 async function signup(userCred) {

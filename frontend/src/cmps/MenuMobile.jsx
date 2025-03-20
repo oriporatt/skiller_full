@@ -1,7 +1,7 @@
 import { Link, NavLink ,useLocation} from 'react-router-dom'
 import CloseModal2 from '../assets/svgs/closeModal2.svg?react'
 import { useSelector ,useDispatch} from 'react-redux'
-import { SET_SYSTEM_MODE } from '../store/reducers/system.reducer'
+import { SET_SYSTEM_MODE ,SET_SHOW_MENU_MOBILE} from '../store/reducers/system.reducer'
 
 export function MenuMobile({showMenuMobile, onCloseMenuModal}) {
     const dispatch = useDispatch()
@@ -13,12 +13,15 @@ export function MenuMobile({showMenuMobile, onCloseMenuModal}) {
             type: SET_SYSTEM_MODE,
             mode: 'buyer'
         });
+        onCloseMenuModal()
     }
     function onSwitchToSelling(){
         dispatch({
             type: SET_SYSTEM_MODE,
             mode: 'seller'
         });
+        onCloseMenuModal()
+
     }
 
     return (

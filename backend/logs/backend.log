@@ -3266,3 +3266,218 @@
 20.3.2025, 17:15:10 - INFO - /api/order | PUT | {"_id":"67dc204506b964aa65a8f51b","clientId":"67d322703b6e1afc1c169369","clientFullName":"Ori Porat","providerId":"67d1f647e6b06d8c42a001fa","providerFullname":"Mei Ling","gigId":"67d1ff41e6b06d8c42a0020f","gigTitle":"I will write compelling ad copy","createdAt":1742479428891,"deliveryDate":"2025-03-26T14:03:48.891Z","status":"approved","total":220} | {"id":"67dc204506b964aa65a8f51b"} | 67d1f647e6b06d8c42a001fa
 20.3.2025, 17:16:56 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
 20.3.2025, 17:17:17 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:25:29 - INFO - Server is running on port: 3030
+20.3.2025, 17:25:53 - INFO - Server is running on port: 3030
+20.3.2025, 17:25:55 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:25:55 - INFO - /api/gig | POST | {"txt":"","categoriesArray":[{"category":"Graphics & Design","active":false},{"category":"Programming & Tech","active":false},{"category":"Digital Marketing","active":false},{"category":"Video & Animation","active":false},{"category":"Writing & Translation","active":false},{"category":"Music & Audio","active":false},{"category":"Business","active":false},{"category":"Finance","active":false},{"category":"AI Services","active":false},{"category":"Personal Growth","active":false},{"category":"Consulting","active":false},{"category":"Photography","active":false}],"minPrice":"","maxPrice":"","filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":""} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:25:55 - INFO - /api/gig | POST | {"txt":"","categoriesArray":[{"category":"Graphics & Design","active":false},{"category":"Programming & Tech","active":false},{"category":"Digital Marketing","active":false},{"category":"Video & Animation","active":false},{"category":"Writing & Translation","active":false},{"category":"Music & Audio","active":false},{"category":"Business","active":false},{"category":"Finance","active":false},{"category":"AI Services","active":false},{"category":"Personal Growth","active":false},{"category":"Consulting","active":false},{"category":"Photography","active":false}],"minPrice":"","maxPrice":"","filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"price","sortDir":1} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:25:57 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:25:57 - INFO - /api/gig | POST | {"txt":"","categoriesArray":[{"category":"Graphics & Design","active":false},{"category":"Programming & Tech","active":false},{"category":"Digital Marketing","active":false},{"category":"Video & Animation","active":false},{"category":"Writing & Translation","active":false},{"category":"Music & Audio","active":false},{"category":"Business","active":false},{"category":"Finance","active":false},{"category":"AI Services","active":false},{"category":"Personal Growth","active":false},{"category":"Consulting","active":false},{"category":"Photography","active":false}],"minPrice":"","maxPrice":"","filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":""} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:25:58 - INFO - /api/gig | POST | {"txt":"","categoriesArray":[{"category":"Graphics & Design","active":false},{"category":"Programming & Tech","active":false},{"category":"Digital Marketing","active":false},{"category":"Video & Animation","active":false},{"category":"Writing & Translation","active":false},{"category":"Music & Audio","active":false},{"category":"Business","active":false},{"category":"Finance","active":false},{"category":"AI Services","active":false},{"category":"Personal Growth","active":false},{"category":"Consulting","active":false},{"category":"Photography","active":false}],"minPrice":"","maxPrice":"","filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"price","sortDir":1} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:26:02 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020e"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:26:21 - INFO - /api/order | POST | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:26:21 - ERROR - cannot add order | BSONError: hex string must be 24 characters | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:26:21 - ERROR - Failed to add order | BSONError: hex string must be 24 characters | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:31:38 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020e"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:31:48 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:31:48 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020e"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:32:40 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020e"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:32:43 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020e"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:32:43 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:33:03 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020e"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:33:08 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020e"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:33:08 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:33:45 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020e"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:34:07 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:34:46 - INFO - /api/gig | POST | {"txt":"","categoriesArray":[{"category":"Graphics & Design","active":false},{"category":"Programming & Tech","active":false},{"category":"Digital Marketing","active":false},{"category":"Video & Animation","active":false},{"category":"Writing & Translation","active":false},{"category":"Music & Audio","active":false},{"category":"Business","active":false},{"category":"Finance","active":false},{"category":"AI Services","active":false},{"category":"Personal Growth","active":false},{"category":"Consulting","active":false},{"category":"Photography","active":false}],"minPrice":"","maxPrice":"","filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":""} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:34:46 - INFO - /api/gig | POST | {"txt":"","categoriesArray":[{"category":"Graphics & Design","active":false},{"category":"Programming & Tech","active":false},{"category":"Digital Marketing","active":false},{"category":"Video & Animation","active":false},{"category":"Writing & Translation","active":false},{"category":"Music & Audio","active":false},{"category":"Business","active":false},{"category":"Finance","active":false},{"category":"AI Services","active":false},{"category":"Personal Growth","active":false},{"category":"Consulting","active":false},{"category":"Photography","active":false}],"minPrice":"","maxPrice":"","filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"price","sortDir":1} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:34:49 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020f"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:36:25 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020f"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:36:25 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020f"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:36:30 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020f"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:36:30 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:36:31 - INFO - /api/order | POST | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:36:31 - ERROR - cannot add order | BSONError: hex string must be 24 characters | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:36:31 - ERROR - Failed to add order | BSONError: hex string must be 24 characters | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:38:20 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020f"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:38:20 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:38:22 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:38:22 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020f"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:38:36 - INFO - Mei | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:38:36 - DEBUG - auth.service - login with username: Mei | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:38:36 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001fa","fullname":"Mei Ling","username":"Mei","cv":"I am a highly skilled translator specializing in English to Mandarin and vice versa. With over 10 years of experience, I have worked with businesses, authors, and content creators to provide accurate and culturally appropriate translations. My services cover documents, websites, and subtitles. Let’s bridge the language barrier together!","level":"premium","rate":4.9,"from":"China","memberSince":2013,"avgResponseTime":10,"languages":["Mandarin","English"],"imageUrl":"https://randomuser.me/api/portraits/women/21.jpg"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:38:38 - INFO - /api/gig | POST | {"txt":"","categoriesArray":[{"category":"Graphics & Design","active":false},{"category":"Programming & Tech","active":false},{"category":"Digital Marketing","active":false},{"category":"Video & Animation","active":false},{"category":"Writing & Translation","active":false},{"category":"Music & Audio","active":false},{"category":"Business","active":false},{"category":"Finance","active":false},{"category":"AI Services","active":false},{"category":"Personal Growth","active":false},{"category":"Consulting","active":false},{"category":"Photography","active":false}],"minPrice":"","maxPrice":"","filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"","sortDir":""} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:38:38 - INFO - /api/gig | POST | {"txt":"","categoriesArray":[{"category":"Graphics & Design","active":false},{"category":"Programming & Tech","active":false},{"category":"Digital Marketing","active":false},{"category":"Video & Animation","active":false},{"category":"Writing & Translation","active":false},{"category":"Music & Audio","active":false},{"category":"Business","active":false},{"category":"Finance","active":false},{"category":"AI Services","active":false},{"category":"Personal Growth","active":false},{"category":"Consulting","active":false},{"category":"Photography","active":false}],"minPrice":"","maxPrice":"","filterPriceGroup":"","deliveryMaxTime":"anytime","sellerRate":"","sellerLevels":[],"sortField":"price","sortDir":1} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:38:40 - INFO - /api/gig | GET | {} | {"id":"67d1ff41e6b06d8c42a0020f"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:38:41 - INFO - /api/order | POST | {"clientId":"67d1f647e6b06d8c42a001fa","clientFullName":"Mei Ling","providerId":"67d1f647e6b06d8c42a001fa","providerFullname":"Mei Ling","gigId":"67d1ff41e6b06d8c42a0020f","gigTitle":"I will write compelling ad copy","createdAt":1742485120262,"deliveryDate":"2025-03-23T15:38:40.262Z","status":"pending","package":"Basic","total":110} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:38:41 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:40:26 - INFO - Mei
+20.3.2025, 17:40:26 - DEBUG - auth.service - login with username: Mei
+20.3.2025, 17:40:27 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001fa","fullname":"Mei Ling","username":"Mei","cv":"I am a highly skilled translator specializing in English to Mandarin and vice versa. With over 10 years of experience, I have worked with businesses, authors, and content creators to provide accurate and culturally appropriate translations. My services cover documents, websites, and subtitles. Let’s bridge the language barrier together!","level":"premium","rate":4.9,"from":"China","memberSince":2013,"avgResponseTime":10,"languages":["Mandarin","English"],"imageUrl":"https://randomuser.me/api/portraits/women/21.jpg"}
+20.3.2025, 17:43:54 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:44:06 - INFO - Mei
+20.3.2025, 17:44:06 - DEBUG - auth.service - login with username: Mei
+20.3.2025, 17:44:06 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001fa","fullname":"Mei Ling","username":"Mei","cv":"I am a highly skilled translator specializing in English to Mandarin and vice versa. With over 10 years of experience, I have worked with businesses, authors, and content creators to provide accurate and culturally appropriate translations. My services cover documents, websites, and subtitles. Let’s bridge the language barrier together!","level":"premium","rate":4.9,"from":"China","memberSince":2013,"avgResponseTime":10,"languages":["Mandarin","English"],"imageUrl":"https://randomuser.me/api/portraits/women/21.jpg"}
+20.3.2025, 17:44:13 - INFO - Mei | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:44:13 - DEBUG - auth.service - login with username: Mei | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:44:13 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001fa","fullname":"Mei Ling","username":"Mei","cv":"I am a highly skilled translator specializing in English to Mandarin and vice versa. With over 10 years of experience, I have worked with businesses, authors, and content creators to provide accurate and culturally appropriate translations. My services cover documents, websites, and subtitles. Let’s bridge the language barrier together!","level":"premium","rate":4.9,"from":"China","memberSince":2013,"avgResponseTime":10,"languages":["Mandarin","English"],"imageUrl":"https://randomuser.me/api/portraits/women/21.jpg"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:44:24 - INFO - Mei | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:44:24 - DEBUG - auth.service - login with username: Mei | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:44:25 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001fa","fullname":"Mei Ling","username":"Mei","cv":"I am a highly skilled translator specializing in English to Mandarin and vice versa. With over 10 years of experience, I have worked with businesses, authors, and content creators to provide accurate and culturally appropriate translations. My services cover documents, websites, and subtitles. Let’s bridge the language barrier together!","level":"premium","rate":4.9,"from":"China","memberSince":2013,"avgResponseTime":10,"languages":["Mandarin","English"],"imageUrl":"https://randomuser.me/api/portraits/women/21.jpg"} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:44:35 - INFO - Mei
+20.3.2025, 17:44:35 - DEBUG - auth.service - login with username: Mei
+20.3.2025, 17:44:35 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001fa","fullname":"Mei Ling","username":"Mei","cv":"I am a highly skilled translator specializing in English to Mandarin and vice versa. With over 10 years of experience, I have worked with businesses, authors, and content creators to provide accurate and culturally appropriate translations. My services cover documents, websites, and subtitles. Let’s bridge the language barrier together!","level":"premium","rate":4.9,"from":"China","memberSince":2013,"avgResponseTime":10,"languages":["Mandarin","English"],"imageUrl":"https://randomuser.me/api/portraits/women/21.jpg"}
+20.3.2025, 17:44:44 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:44:56 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:46:38 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:48:21 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:48:49 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:49:07 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001fa
+20.3.2025, 17:50:33 - INFO - a
+20.3.2025, 17:50:33 - DEBUG - auth.service - login with username: a
+20.3.2025, 17:50:33 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 17:50:34 - INFO - /api/order | GET | {} | {}
+20.3.2025, 17:51:07 - INFO - /api/order | GET | {} | {}
+20.3.2025, 17:51:12 - INFO - a
+20.3.2025, 17:51:12 - DEBUG - auth.service - login with username: a
+20.3.2025, 17:51:12 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 17:51:13 - INFO - /api/order | GET | {} | {}
+20.3.2025, 17:52:37 - INFO - a
+20.3.2025, 17:52:37 - DEBUG - auth.service - login with username: a
+20.3.2025, 17:52:37 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 17:52:38 - INFO - /api/order | GET | {} | {}
+20.3.2025, 17:53:05 - INFO - a
+20.3.2025, 17:53:05 - DEBUG - auth.service - login with username: a
+20.3.2025, 17:53:06 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 17:53:06 - INFO - /api/order | GET | {} | {}
+20.3.2025, 17:54:30 - INFO - Server is running on port: 3030
+20.3.2025, 17:54:38 - INFO - a
+20.3.2025, 17:54:38 - DEBUG - auth.service - login with username: a
+20.3.2025, 17:54:39 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 17:54:39 - INFO - /api/order | GET | {} | {}
+20.3.2025, 17:55:56 - INFO - /api/order | GET | {} | {}
+20.3.2025, 17:56:02 - INFO - a
+20.3.2025, 17:56:02 - DEBUG - auth.service - login with username: a
+20.3.2025, 17:56:03 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 17:56:03 - INFO - /api/order | GET | {} | {}
+20.3.2025, 17:56:37 - INFO - a
+20.3.2025, 17:56:37 - DEBUG - auth.service - login with username: a
+20.3.2025, 17:56:37 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 17:56:38 - INFO - /api/order | GET | {} | {}
+20.3.2025, 17:56:58 - INFO - a
+20.3.2025, 17:56:58 - DEBUG - auth.service - login with username: a
+20.3.2025, 17:56:59 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 17:57:00 - INFO - /api/order | GET | {} | {}
+20.3.2025, 17:57:36 - INFO - /api/order | GET | {} | {}
+20.3.2025, 17:58:35 - INFO - a
+20.3.2025, 17:58:35 - DEBUG - auth.service - login with username: a
+20.3.2025, 17:58:35 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 17:58:36 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:00:12 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:00:16 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:00:16 - INFO - a
+20.3.2025, 18:00:16 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:00:17 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:00:39 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:01:13 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:01:17 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:01:17 - INFO - a
+20.3.2025, 18:01:17 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:01:18 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:01:29 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:01:40 - DEBUG - auth.service - signup with username: qqq, fullname: qqq
+20.3.2025, 18:01:41 - DEBUG - auth.route - new account created: {"username":"qqq","password":"$2b$10$xHKz5qPNhKrHh5IkuNjNsOnHbPcrnCWrxeXk/ZEwAMSkRYNZiTU7i","fullname":"qqq","_id":"67dc3be50112f2b645544258"}
+20.3.2025, 18:01:41 - DEBUG - auth.service - login with username: qqq
+20.3.2025, 18:01:41 - INFO - User signup: | {"_id":"67dc3be50112f2b645544258","username":"qqq","fullname":"qqq"}
+20.3.2025, 18:01:57 - INFO - a
+20.3.2025, 18:01:57 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:01:57 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:01:58 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:02:44 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:02:50 - INFO - a
+20.3.2025, 18:02:50 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:02:50 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:02:51 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:03:34 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:03:40 - INFO - a
+20.3.2025, 18:03:40 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:03:40 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:03:41 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:03:46 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:05:37 - INFO - Mei
+20.3.2025, 18:05:37 - DEBUG - auth.service - login with username: Mei
+20.3.2025, 18:05:37 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001fa","fullname":"Mei Ling","username":"Mei","cv":"I am a highly skilled translator specializing in English to Mandarin and vice versa. With over 10 years of experience, I have worked with businesses, authors, and content creators to provide accurate and culturally appropriate translations. My services cover documents, websites, and subtitles. Let’s bridge the language barrier together!","level":"premium","rate":4.9,"from":"China","memberSince":2013,"avgResponseTime":10,"languages":["Mandarin","English"],"imageUrl":"https://randomuser.me/api/portraits/women/21.jpg"}
+20.3.2025, 18:05:47 - INFO - a
+20.3.2025, 18:05:47 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:05:47 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:05:57 - INFO - Mei
+20.3.2025, 18:05:57 - DEBUG - auth.service - login with username: Mei
+20.3.2025, 18:05:58 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001fa","fullname":"Mei Ling","username":"Mei","cv":"I am a highly skilled translator specializing in English to Mandarin and vice versa. With over 10 years of experience, I have worked with businesses, authors, and content creators to provide accurate and culturally appropriate translations. My services cover documents, websites, and subtitles. Let’s bridge the language barrier together!","level":"premium","rate":4.9,"from":"China","memberSince":2013,"avgResponseTime":10,"languages":["Mandarin","English"],"imageUrl":"https://randomuser.me/api/portraits/women/21.jpg"}
+20.3.2025, 18:08:34 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:08:39 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:08:44 - INFO - a
+20.3.2025, 18:08:44 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:08:44 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:08:45 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:08:48 - INFO - Mei
+20.3.2025, 18:08:48 - DEBUG - auth.service - login with username: Mei
+20.3.2025, 18:08:48 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001fa","fullname":"Mei Ling","username":"Mei","cv":"I am a highly skilled translator specializing in English to Mandarin and vice versa. With over 10 years of experience, I have worked with businesses, authors, and content creators to provide accurate and culturally appropriate translations. My services cover documents, websites, and subtitles. Let’s bridge the language barrier together!","level":"premium","rate":4.9,"from":"China","memberSince":2013,"avgResponseTime":10,"languages":["Mandarin","English"],"imageUrl":"https://randomuser.me/api/portraits/women/21.jpg"}
+20.3.2025, 18:09:22 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:09:28 - INFO - a
+20.3.2025, 18:09:28 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:09:28 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:09:29 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:09:35 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:11:10 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:11:17 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:11:26 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:11:31 - INFO - a
+20.3.2025, 18:11:31 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:11:31 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:11:32 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:11:40 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:13:45 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:13:49 - INFO - a
+20.3.2025, 18:13:49 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:13:49 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:14:50 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:14:54 - INFO - a
+20.3.2025, 18:14:54 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:14:54 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:15:14 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:15:58 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:16:01 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:16:01 - INFO - a
+20.3.2025, 18:16:01 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:17:02 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:17:05 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:17:05 - INFO - a
+20.3.2025, 18:17:05 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:18:04 - INFO - /api/order | GET | {} | {}
+20.3.2025, 18:18:06 - INFO - a
+20.3.2025, 18:18:06 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:18:06 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:20:08 - INFO - Mei
+20.3.2025, 18:20:08 - DEBUG - auth.service - login with username: Mei
+20.3.2025, 18:20:08 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001fa","fullname":"Mei Ling","username":"Mei","cv":"I am a highly skilled translator specializing in English to Mandarin and vice versa. With over 10 years of experience, I have worked with businesses, authors, and content creators to provide accurate and culturally appropriate translations. My services cover documents, websites, and subtitles. Let’s bridge the language barrier together!","level":"premium","rate":4.9,"from":"China","memberSince":2013,"avgResponseTime":10,"languages":["Mandarin","English"],"imageUrl":"https://randomuser.me/api/portraits/women/21.jpg"}
+20.3.2025, 18:22:28 - INFO - Mei
+20.3.2025, 18:22:28 - DEBUG - auth.service - login with username: Mei
+20.3.2025, 18:22:29 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001fa","fullname":"Mei Ling","username":"Mei","cv":"I am a highly skilled translator specializing in English to Mandarin and vice versa. With over 10 years of experience, I have worked with businesses, authors, and content creators to provide accurate and culturally appropriate translations. My services cover documents, websites, and subtitles. Let’s bridge the language barrier together!","level":"premium","rate":4.9,"from":"China","memberSince":2013,"avgResponseTime":10,"languages":["Mandarin","English"],"imageUrl":"https://randomuser.me/api/portraits/women/21.jpg"}
+20.3.2025, 18:24:22 - INFO - a
+20.3.2025, 18:24:22 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:24:22 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:24:28 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:24:28 - INFO - a
+20.3.2025, 18:24:28 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:24:35 - INFO - a
+20.3.2025, 18:24:35 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:24:35 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:24:41 - INFO - a
+20.3.2025, 18:24:41 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:24:41 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:24:45 - INFO - a
+20.3.2025, 18:24:45 - DEBUG - auth.service - login with username: a
+20.3.2025, 18:24:45 - ERROR - Failed to Login Invalid username or password
+20.3.2025, 18:24:52 - INFO - Ori
+20.3.2025, 18:24:52 - DEBUG - auth.service - login with username: Ori
+20.3.2025, 18:24:52 - INFO - User login:  | {"_id":"67d322703b6e1afc1c169369","username":"Ori","fullname":"Ori Porat","imageUrl":"https://res.cloudinary.com/deue4rbta/image/upload/v1742398024/ori_hblte3.jpg"}

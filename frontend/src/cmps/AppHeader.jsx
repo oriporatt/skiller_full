@@ -131,12 +131,14 @@ export function AppHeader() {
 			type: SET_SYSTEM_MODE,
 			mode: 'buyer'
 		});
+
 	}
 	function onSwitchToSelling(){
 		dispatch({
 			type: SET_SYSTEM_MODE,
 			mode: 'seller'
-		});
+		})
+
 	}
 
 

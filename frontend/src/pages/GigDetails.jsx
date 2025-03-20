@@ -29,7 +29,7 @@ export function GigDetails() {
   const showOrdersModal = useSelector(storeState => storeState.systemModule.showOrdersModal)
 
   const [orderPackage, setOrderPackage] = useState('Basic')
-
+  const client=userService.getLoggedinUser()
   const [order,setOrder]=useState(null)
 
   // update gig state while changing
@@ -99,7 +99,7 @@ export function GigDetails() {
 
   function buildOrderObj(){
     let newOrder={}
-    const client=userService.getLoggedinUser()
+    
     if (!client) return(newOrder)
     newOrder.clientId=client._id
     newOrder.clientFullName=client.fullname
@@ -124,7 +124,23 @@ export function GigDetails() {
   }
 
   async function onSubmitOrder(){
+    
+    if (!client){
+      Toastify({
+        text: "You must login to place order",
+        className: "toast-order",
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        offset: {
+          x: 70, 
+          y: 70 
+        },
+        duration: 1500
+      }).showToast();
+      return
+    }
     const savedOrder=await addOrder(order)
+
     await Toastify({
       text: "Order received successfully",
       className: "toast-order",

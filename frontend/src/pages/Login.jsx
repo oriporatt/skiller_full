@@ -5,6 +5,7 @@ import { useSelector ,useDispatch} from 'react-redux'
 import { userService } from '../services/user'
 import { login } from '../store/actions/user.actions'
 import { SET_SYSTEM_MODE } from '../store/reducers/system.reducer'
+import { showErrorMsg } from '../services/event-bus.service'
 
 export function Login() {
 
@@ -22,12 +23,22 @@ export function Login() {
         if (ev) ev.preventDefault()
 
         if (!credentials.username) return
-        await login(credentials)
-        dispatch({
-            type: SET_SYSTEM_MODE,
-            mode: 'buyer'
-        });
-        navigate('/')
+        try{
+            await login(credentials)
+            dispatch({
+                type: SET_SYSTEM_MODE,
+                mode: 'buyer'
+            });
+            navigate('/')
+        } catch (err) {  
+            if (err.response?.status === 401) {
+                showErrorMsg(`Wrong Password/Username`)
+                
+            } else {
+                showErrorMsg(`Can't login`)
+            }
+        }
+
     }
 
     function handleChange(ev) {
