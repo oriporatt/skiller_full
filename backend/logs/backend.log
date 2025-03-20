@@ -3481,3 +3481,4 @@
 20.3.2025, 18:24:52 - INFO - Ori
 20.3.2025, 18:24:52 - DEBUG - auth.service - login with username: Ori
 20.3.2025, 18:24:52 - INFO - User login:  | {"_id":"67d322703b6e1afc1c169369","username":"Ori","fullname":"Ori Porat","imageUrl":"https://res.cloudinary.com/deue4rbta/image/upload/v1742398024/ori_hblte3.jpg"}
+20.3.2025, 18:25:58 - INFO - Server is running on port: 3030
