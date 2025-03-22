@@ -22,6 +22,9 @@ import { orderService } from '../services/order'
 import { StatusModal } from '../cmps/StatusModal'
 import { updateOrder } from '../store/actions/order.actions'
 import { OrderList } from '../cmps/OrderList'
+import CountUp from 'react-countup';
+
+
 
 
 export function SellerIndex() {
@@ -37,6 +40,7 @@ export function SellerIndex() {
             seller=sellerArray[0]
         }
     }
+
 
 
 
@@ -93,6 +97,7 @@ export function SellerIndex() {
     function calcStats(){
         
         statsObj.totalOrders=sellerOrders.length
+        
         statsObj.completedOrders=sellerOrders.filter(order=>order.status==='completed').length
         statsObj.rejectedOrders=sellerOrders.filter(order=>order.status==='rejected').length
         statsObj.pending=sellerOrders.filter(order=>order.status==='pending').length
@@ -140,6 +145,7 @@ export function SellerIndex() {
     useEffect(() => {
         loadOrders(orderService.getDefaultFilter())
     }, [])
+
 
     return (
         <main className="seller-index">  
@@ -202,7 +208,7 @@ export function SellerIndex() {
                         <li className='total-by-status'>
                             <div className='totals'>
                                 <h4>Total Orders</h4>
-                                <h5>{statsObj.totalOrders}</h5>
+                                <h5><CountUp end={statsObj.totalOrders} duration={1.5} /></h5>
                                 <StatCart/>
                             </div>
 
@@ -211,14 +217,13 @@ export function SellerIndex() {
                         <li className='total-by-amount'>
                             <div className='total-amount'>
                                 <h4>Total Income</h4>
-                                <h5>{statsObj.totalOrderValue}$</h5>
-                                <Income/>
+                                <h5><CountUp end={statsObj.totalOrderValue} duration={1.5} />$</h5>                                <Income/>
                             </div>
                         </li>
                         <li className='total-by-clients'>
                             <div className='total-client'>
                                 <h4>Clients</h4>
-                                <h5>{statsObj.clients}</h5>
+                                <h5><CountUp end={statsObj.clients} duration={1.5} /></h5>
                                 <Clients/>
                             </div>
                         </li>

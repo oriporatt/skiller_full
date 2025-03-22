@@ -3482,3 +3482,138 @@
 20.3.2025, 18:24:52 - DEBUG - auth.service - login with username: Ori
 20.3.2025, 18:24:52 - INFO - User login:  | {"_id":"67d322703b6e1afc1c169369","username":"Ori","fullname":"Ori Porat","imageUrl":"https://res.cloudinary.com/deue4rbta/image/upload/v1742398024/ori_hblte3.jpg"}
 20.3.2025, 18:25:58 - INFO - Server is running on port: 3030
+22.3.2025, 15:22:31 - INFO - Server is running on port: 3030
+22.3.2025, 15:23:34 - INFO - /api/order | GET | {} | {} | 67d322703b6e1afc1c169369
+22.3.2025, 15:28:16 - INFO - /api/order | GET | {} | {} | 67d322703b6e1afc1c169369
+22.3.2025, 15:28:23 - INFO - Elena | 67d322703b6e1afc1c169369
+22.3.2025, 15:28:23 - DEBUG - auth.service - login with username: Elena | 67d322703b6e1afc1c169369
+22.3.2025, 15:28:23 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001f8","fullname":"Elena Petrova","username":"Elena","cv":"I am a creative graphic designer with over 6 years of experience in branding, logo design, and illustration. I have helped businesses establish strong visual identities by crafting modern, eye-catching designs. My skills include Adobe Illustrator, Photoshop, and Figma. Let's work together to create stunning visuals that represent your brand.","level":"premium","rate":4.9,"from":"Russia","memberSince":2018,"avgResponseTime":22,"languages":["Russian","English"],"imageUrl":"https://randomuser.me/api/portraits/women/32.jpg"} | 67d322703b6e1afc1c169369
+22.3.2025, 15:28:24 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:28:38 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:28:38 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:29:04 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:29:53 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:29:53 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:29:56 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:29:56 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:31:03 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:31:03 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:31:27 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:31:29 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:31:30 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:31:49 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:31:49 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:31:52 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:31:52 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:32:08 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:32:10 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:32:11 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:32:26 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:32:28 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:32:29 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:33:48 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:33:49 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:33:51 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:33:51 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:34:09 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:34:11 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:34:11 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:34:17 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:34:20 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:34:20 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:34:43 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:34:46 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:34:46 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:36:06 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:36:06 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:36:09 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:36:10 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:36:28 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:36:31 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:36:31 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:37:18 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:40:40 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:04 - INFO - Elena | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:04 - DEBUG - auth.service - login with username: Elena | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:04 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001f8","fullname":"Elena Petrova","username":"Elena","cv":"I am a creative graphic designer with over 6 years of experience in branding, logo design, and illustration. I have helped businesses establish strong visual identities by crafting modern, eye-catching designs. My skills include Adobe Illustrator, Photoshop, and Figma. Let's work together to create stunning visuals that represent your brand.","level":"premium","rate":4.9,"from":"Russia","memberSince":2018,"avgResponseTime":22,"languages":["Russian","English"],"imageUrl":"https://randomuser.me/api/portraits/women/32.jpg"} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:25 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:27 - INFO - Elena | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:27 - DEBUG - auth.service - login with username: Elena | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:27 - INFO - User login:  | {"_id":"67d1f647e6b06d8c42a001f8","fullname":"Elena Petrova","username":"Elena","cv":"I am a creative graphic designer with over 6 years of experience in branding, logo design, and illustration. I have helped businesses establish strong visual identities by crafting modern, eye-catching designs. My skills include Adobe Illustrator, Photoshop, and Figma. Let's work together to create stunning visuals that represent your brand.","level":"premium","rate":4.9,"from":"Russia","memberSince":2018,"avgResponseTime":22,"languages":["Russian","English"],"imageUrl":"https://randomuser.me/api/portraits/women/32.jpg"} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:29 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:42 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:44 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:44 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:53 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:43:53 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:44:27 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:44:31 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:44:31 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:44:40 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:44:40 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:45:41 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:46:29 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:47:21 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:47:35 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:47:56 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:48:04 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:48:04 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:48:07 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:48:07 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:48:59 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:48:59 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:49:01 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:49:01 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:49:23 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:50:22 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:50:29 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:50:29 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:50:35 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:50:52 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:52:09 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:52:09 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:52:13 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:52:13 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:52:32 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:52:32 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:52:35 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:52:35 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:52:41 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:52:42 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:52:44 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:52:44 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:53:19 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:53:20 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:53:22 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:53:22 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:54:06 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:54:06 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:54:08 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:54:08 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:54:13 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:54:14 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:54:37 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:54:40 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:54:40 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:55:54 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:55:54 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:56:18 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:56:28 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:56:30 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:56:31 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:57:11 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:57:20 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:57:25 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:57:30 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:57:30 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:57:42 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:58:12 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:58:23 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:58:26 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:58:26 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:58:36 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:58:39 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:58:39 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:59:06 - INFO - /api/order | GET | {} | {} | 67d1f647e6b06d8c42a001f8
+22.3.2025, 15:59:26 - INFO - Server is running on port: 3030
+22.3.2025, 16:00:11 - INFO - Server is running on port: 3030
