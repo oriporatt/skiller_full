@@ -40,19 +40,18 @@ export function GigPreviewCarrousel({ images,gigId=undefined }) { //images is th
       }else if (currentIndex>=4){
         navBarList[0]='s'
         if (currentIndex+2===images.length){ 
-          navBarList[4]='B'
           navBarList[3]='W'
+          navBarList[4]='B'
         }else if (currentIndex+1===images.length){
-          navBarList[4]='W'
           navBarList[3]='B'
+          navBarList[4]='W'
         }else{
           navBarList[3]='W'
         }
       }
     }
-
-
   }
+
   calcNavBar()
 
 
@@ -75,11 +74,9 @@ export function GigPreviewCarrousel({ images,gigId=undefined }) { //images is th
         <ul>
         {navBarList.map((item, idx) => (
           <li key={idx}>
+            {item==='s'&&<Dot className='small-dot'/>}
             {item==='B'&&<Dot className='big-dot'/>}
             {item==='W'&&<Dot className='white-dot'/>}
-            {item==='s'&&<Dot className='small-dot'/>}
-
-
           </li>  ))}
         </ul>        
       </div>
