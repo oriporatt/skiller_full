@@ -247,6 +247,10 @@
     .seller-side{
         display: none;
     }
+    .stats-list{
+        gap:functions.rem(16px); 
+    }
+
     .stats-and-orders{
         grid-column: 1;
         display: grid;
