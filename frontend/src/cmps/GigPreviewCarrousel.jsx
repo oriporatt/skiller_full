@@ -32,22 +32,24 @@ export function GigPreviewCarrousel({ images,gigId=undefined }) { //images is th
     if (images.length<=5){
       navBarList = Array(images.length).fill('B');
       navBarList[currentIndex]='W'
-    }else{
-      navBarList = ['W','B','B','B','s']
-      if (currentIndex<4 && currentIndex>0){
-        navBarList[0]='B'
-        navBarList[currentIndex]='W'
-      }else if (currentIndex>=4){
-        navBarList[0]='s'
-        if (currentIndex+2===images.length){ 
-          navBarList[3]='W'
-          navBarList[4]='B'
-        }else if (currentIndex+1===images.length){
-          navBarList[3]='B'
-          navBarList[4]='W'
-        }else{
-          navBarList[3]='W'
-        }
+      return
+    }
+
+    navBarList = ['W','B','B','B','s']
+
+    if (currentIndex<4 && currentIndex>0){
+      navBarList[0]='B'
+      navBarList[currentIndex]='W'
+    }else if (currentIndex>=4){
+      navBarList[0]='s'
+      if (currentIndex+2===images.length){ 
+        navBarList[3]='W'
+        navBarList[4]='B'
+      }else if (currentIndex+1===images.length){
+        navBarList[3]='B'
+        navBarList[4]='W'
+      }else{
+        navBarList[3]='W'
       }
     }
   }
