@@ -3,6 +3,7 @@ import MarkV from '../assets/svgs/markV.svg?react'
 import DropDown from '../assets/svgs/DropDown.svg?react'
 import Checked from '../assets/svgs/Checked.svg?react'
 import Unchecked from '../assets/svgs/Unchecked.svg?react'
+
 import { GigFilterCategory } from './GigFilterCategory'
 import { GigFilterSeller } from './GigFilterSeller'
 import { GigFilterBudget } from './GigFilterBudget'
@@ -44,10 +45,12 @@ export function GigFilter({ filterBy, onSetFilterBy,
     let sortByTitle 
     switch (sortByField){
         case 'price':
-            sortByTitle= 'Budget'
+            sortByTitle= 'Price'
             break
         case 'daysToMake':
             sortByTitle= 'Delivery Time'
+        case 'owner.rate':
+            sortByTitle= 'Seller Rate'
             break
     }
 
@@ -57,6 +60,12 @@ export function GigFilter({ filterBy, onSetFilterBy,
 
     function onClickSortBy(field){
         setSortByField(field)
+        if (field==='owner.rate'){
+            setSortByDirection(-1)
+        }else{
+            setSortByDirection(1)
+        }
+        
         setShowSortByMenu(false)
     }
     
@@ -257,16 +266,20 @@ export function GigFilter({ filterBy, onSetFilterBy,
             <div className='bottom-menu'>
                 <h3 className='results-num'>{gigsLength} results</h3>
                 <div className='sort-by-menu'>
-                    <label>Sort by: <span className='sort-by-title' onClick={toggleSortMenu}>{sortByTitle}</span>
+                    <label>Sort by: <span className='sort-by-title' onClick={toggleSortMenu}>{sortByTitle}<DropDown/></span>
                         {showSortByMenu&&
                             <div className='sort-by-modal'>
                                 <label onClick={()=>onClickSortBy('price')}>
                                     {(sortByField==='price')&&<span className='mark-v'><MarkV/></span>}
-                                    <span className='title'>Budget</span>
+                                    <span className='title'>Price</span>
                                 </label>
                                 <label onClick={()=>onClickSortBy('daysToMake')}>
                                     {(sortByField==='daysToMake')&&<span className='mark-v'><MarkV/></span>}
                                     <span className='title'>Delivery Time</span>
+                                </label>
+                                <label onClick={()=>onClickSortBy('owner.rate')}>
+                                    {(sortByField==='owner.rate')&&<span className='mark-v'><MarkV/></span>}
+                                    <span className='title'>Seller Rate</span>
                                 </label>
                                 
                             </div>}

@@ -68,7 +68,7 @@
     h3{
         font-size: functions.rem(16px);
         color: variables.$gray;
-
+        margin: 0;
         
     }
 }
@@ -80,17 +80,24 @@
     font-size: 1rem;
     color: variables.$gray;
     font-weight: 400;
-
+    display: flex;
+    align-items: center;
 
     .sort-by-title{
         color: variables.$black;
         font-weight: 700;
         padding: 1rem 1rem ;
         border-radius: 15px;
-
+        align-items: center;
+        display: flex;
         &:hover{
             background-color: variables.$veryLightGray;
             cursor: pointer;
+        }
+        & svg{
+            height: 15px;
+            width: 15px;
+            margin-left: 10px;
         }
 
     }
@@ -251,10 +258,11 @@
 
     }
     .bottom-menu{
-        width: 80%;
+        width: 90%;
+        flex-direction: column;
     }
     .btn-design{
-        width: 80%;
+        width: 90%;
 
     }
 }
